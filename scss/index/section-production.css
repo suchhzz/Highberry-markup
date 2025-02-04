@@ -1,0 +1,29 @@
+.production {
+  margin-bottom: 100px;
+}
+.production .production-container {
+  margin: auto;
+  margin-top: 90px;
+  max-width: 990px;
+}
+.production .production-container .production-content {
+  margin-top: 50px;
+}
+.production .production-container .production-content .main-content {
+  gap: 85px;
+  border: 1px solid #E3DED9;
+  border-radius: 10px;
+  padding: 45px;
+  margin-bottom: 60px;
+}
+.production .production-container .production-content .main-content .main-description p {
+  font-family: "Roboto-Light";
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  text-align: justify;
+}
+.production .production-container .production-content .production-info {
+  width: 100%;
+  justify-content: space-between;
+}/*# sourceMappingURL=section-production.css.map */

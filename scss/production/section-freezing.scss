@@ -1,0 +1,102 @@
+.freezing-info {
+    .freezing-container {
+        padding: 0 200px;
+        margin-top: 100px;
+        margin-bottom: 190px;
+        gap: 60px;
+        flex-direction: column;
+
+        .freezing-block {
+
+            border: 1px solid #E3DED9;
+            border-radius: 10px;
+            padding: 30px 30px 10px 30px;
+            gap: 100px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.10);
+
+            .content {
+                .content-title {
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-bottom: 20px;
+
+                    p {
+                        font-family: 'Roboto-Light';
+                        font-size: 30px;
+                        color: #6AB354;
+                    }
+                }
+
+                .content-description {
+                    p {
+                        font-family: 'Roboto-Regular';
+                        font-size: 18px;
+                        color: black;
+                    }
+
+                    line-height: 1.6;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+.freezing-process {
+
+    .freezing-process-title {
+        flex-direction: column;
+        gap: 70px;
+        margin-bottom: 55px;
+    }
+
+    .freezing-process-main {
+        position: relative;
+
+        .divider {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -0.7%);
+            height: 5235px;
+        }
+
+        .grid-info-container {
+
+            row-gap: 110px;
+            column-gap: 140px;
+
+            .grid-item {
+                &.shadow {
+                    border: 1px solid #6AB354;
+                    box-shadow: none;
+                }
+
+                &.grid-image {
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .grid-title {
+                    p {
+                        font-size: 30px;
+                        font-family: 'Roboto-Light';
+                    }
+                }
+
+                .grid-main {
+                    p {
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-image {
+    margin: 100px 0;
+}

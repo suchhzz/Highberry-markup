@@ -1,0 +1,71 @@
+.logo-content .logo-content-container {
+  padding: 70px 0;
+}
+.logo-content .logo-content-container .logo-title {
+  gap: 100px;
+}
+.logo-content .logo-content-container .logo-title .title {
+  flex-direction: column;
+  gap: 35px;
+}
+.logo-content .logo-content-container .logo-title .title p.green-text {
+  font-family: "Roboto-Regular";
+  font-size: 46px;
+  color: #6AB354;
+}
+.logo-content .logo-content-container .logo-title .title p.default-text {
+  font-family: "Roboto-Light";
+  font-size: 40px;
+  color: #1A171B;
+}
+
+.content-cards {
+  padding-top: 75px;
+  padding-bottom: 110px;
+  background-color: #F5F5F5;
+}
+.content-cards .main-content {
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: repeat(2, 416px);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 85px;
+}
+.content-cards .main-content .grid-card {
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+.content-cards .main-content .grid-card.lower-grid-item {
+  grid-column: 1/4;
+  padding: 0 120px;
+}
+.content-cards .main-content .grid-card .grid-card-icon {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+.content-cards .main-content .grid-card .card-title {
+  margin-top: 60px;
+  text-align: center;
+}
+.content-cards .main-content .grid-card .card-title p {
+  font-family: "Roboto-Regular";
+  font-size: 28px;
+  color: #6AB354;
+}
+.content-cards .main-content .grid-card .card-text {
+  text-align: center;
+  padding: 0 40px;
+}
+.content-cards .main-content .grid-card .card-text p {
+  font-family: "Roboto-Light";
+  font-size: 20px;
+  color: black;
+  margin-bottom: 17px;
+}/*# sourceMappingURL=section-content.css.map */

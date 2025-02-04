@@ -1,0 +1,85 @@
+.logo-content {
+    .logo-content-container {
+        padding: 70px 0;
+
+        .logo-title {
+            gap: 100px;
+
+            .title {
+                flex-direction: column;
+                gap: 35px;
+
+                p.green-text {
+                    font-family: 'Roboto-Regular';
+                    font-size: 46px;
+                    color: #6AB354;
+                }
+
+                p.default-text {
+                    font-family: 'Roboto-Light';
+                    font-size: 40px;
+                    color: #1A171B;
+                }
+            }
+        }
+    }
+}
+
+.content-cards {
+    padding-top: 75px;
+    padding-bottom: 110px;
+    background-color: #F5F5F5;
+
+    .main-content {
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 416px);
+
+        column-gap: 50px;
+        row-gap: 85px;
+
+        .grid-card {
+            flex-direction: column;
+            justify-content: start;
+            gap: 30px;
+            position: relative;
+
+            background-color: white;
+            border-radius: 10px;
+            height: 100%;
+            box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+
+            &.lower-grid-item {
+                grid-column: 1 / 4;
+                padding: 0 120px;
+            }
+
+            .grid-card-icon {
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+            }
+
+            .card-title {
+                margin-top: 60px;
+                text-align: center;
+                p {
+                    font-family: 'Roboto-Regular';
+                    font-size: 28px;
+                    color: #6AB354;
+                }
+            }
+
+            .card-text {
+                text-align: center;
+                padding: 0 40px;
+
+                p {
+                    font-family: 'Roboto-Light';
+                    font-size: 20px;
+                    color: black;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.main-logo .main-logo-image {
+  background-image: url("../../images/values/main-logo-background.png");
+}
+.main-logo .main-logo-empty {
+  height: 280px;
+}
+.main-logo .modal {
+  height: auto;
+  padding-bottom: 80px;
+}/*# sourceMappingURL=section-main-logo.css.map */

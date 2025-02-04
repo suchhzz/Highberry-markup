@@ -1,0 +1,114 @@
+.main-logo {
+    .main-logo-image {
+        background-image: url('../../images/about/main-logo-background.png');
+    }
+
+    .modal {
+
+        padding-bottom: 80px;
+
+        .modal-cards {
+            margin-top: 170px;
+        }
+    }
+}
+
+.placement {
+    padding-bottom: 80px;
+    .placement-container {
+        .title {
+            margin-top: 85px;
+            margin-bottom: 60px;
+        }
+
+        .placement-map {
+            margin-bottom: 65px;
+        }
+
+        .placement-description {
+            padding: 40px 65px;
+            margin: auto;
+            width: 740px;
+            text-align: center;
+            border: 1px solid #D9D9D9;
+            border-radius: 10px;
+
+            p {
+                font-family: 'Roboto-Light';
+                font-size: 20px;
+                color: black;
+            }
+        }
+    }
+}
+
+.about-info {
+    background-color: #F5F5F5;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    .about-main {
+        grid-template-columns: repeat(2, 416px);
+        grid-template-rows: repeat(3, 549px);
+    }
+}
+
+.production-capacity {
+    background-color: #F5F5F5;
+
+    .title {
+        margin-bottom: 60px;
+    }
+
+    .content-card {
+        background-color: white;
+        padding: 80px 0;
+        gap: 70px;
+
+        .image-section {
+            gap: 40px;
+            .icons {
+                flex-direction: column;
+                align-items: start;
+                gap: 25px;
+
+                .card-info {
+                    gap: 20px;
+
+                    p {
+                        font-family: 'Roboto-Regular';
+                        font-size: 15px;
+                        color: black;
+
+                        span {
+                            font-size: 24px;
+                            font-weight: bold;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .description {
+            gap: 45px;
+            .text {
+                flex-direction: column;
+                align-items: start;
+                max-width: 369px;
+                align-self: flex-start;
+
+                p {
+                    font-family: 'Roboto-Light';
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.space {
+    height: 50px;
+    background-color: #F5F5F5;
+}

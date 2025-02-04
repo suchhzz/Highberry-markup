@@ -1,0 +1,70 @@
+.main-logo .main-logo-image {
+  background-image: url("../../images/gallery/main-logo-background.png");
+}
+.main-logo .main-logo-empty {
+  height: 250px;
+}
+.main-logo .modal {
+  height: 224px;
+}
+
+section {
+  background-color: #F5F5F5;
+}
+
+.gallery-slider-container {
+  padding-bottom: 103px;
+}
+.gallery-slider-container .gallery-slider {
+  flex-direction: column;
+}
+.gallery-slider-container .gallery-slider .ellipse-slider {
+  margin: 35px 0;
+  gap: 28px;
+}
+.gallery-slider-container .gallery-slider .image-description {
+  height: 315px;
+  overflow: hidden;
+}
+.gallery-slider-container .gallery-slider .image-description .image-item {
+  margin-top: 50%;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  gap: 59px;
+  align-items: flex-start;
+}
+.gallery-slider-container .gallery-slider .image-description .image-item.active {
+  margin-top: 0;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  transition: margin-top 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+.gallery-slider-container .gallery-slider .image-description .image-item .image-description-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 400px;
+  height: 315px;
+  border-radius: 10px;
+}
+.gallery-slider-container .gallery-slider .image-description .image-item .text-description-item {
+  max-width: 368px;
+}
+.gallery-slider-container .gallery-slider .image-description .image-item .text-description-item p {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  color: #1A171B;
+  line-height: 25px;
+}
+
+.video-section-container {
+  padding-bottom: 50px;
+}
+.video-section-container .video-content {
+  width: 900px;
+  height: 493px;
+  background-color: black;
+}/*# sourceMappingURL=section-content.css.map */

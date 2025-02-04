@@ -1,0 +1,85 @@
+.main-logo {
+    .main-logo-image {
+        background-image: url('../../images/gallery/main-logo-background.png');
+    }
+
+    .main-logo-empty {
+        height: 250px;
+    }
+
+    .modal {
+        height: 224px;
+    }
+}
+
+section {
+    background-color: #F5F5F5;
+}
+
+.gallery-slider-container {
+    padding-bottom: 103px;
+
+    .gallery-slider {
+        flex-direction: column;
+
+        .ellipse-slider {
+            margin: 35px 0;
+            gap: 28px;
+        }
+
+        .image-description {
+            height: 315px;
+            overflow: hidden;
+
+            .image-item {
+                margin-top: 50%;
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+                width: 0;
+
+                &.active {
+                    margin-top: 0;
+                    opacity: 1;
+                    height: 100%;
+                    width: 100%;
+                    visibility: visible;
+                    transition: margin-top 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s ease-out;
+                }
+
+
+                gap: 59px;
+                align-items: flex-start;
+
+                .image-description-item {
+                    object-fit: cover;
+                    width: 400px;
+                    height: 315px;
+                    border-radius: 10px;
+                }
+    
+                .text-description-item {
+                    max-width: 368px;
+    
+                    p {
+                        font-family: 'Roboto-Regular';
+                        font-size: 16px;
+                        color: #1A171B;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+.video-section-container {
+    padding-bottom: 50px;
+    .video-content {
+        width: 900px;
+        height: 493px;
+        background-color: black;
+    }
+}

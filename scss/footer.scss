@@ -1,0 +1,275 @@
+footer {
+    .footer-container {
+        background-image: url("../images/footer/footer-background.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        .container {
+
+            @media (max-width: 1180px)  {
+                margin: 0 19px;
+            }
+    
+            .main-content {
+                margin-bottom: 40px;
+                justify-content: space-between;
+
+                .logo-section {
+                    @media (max-width: 1180px) {
+                        width: 180px;
+                        height: 170px;
+                    }
+
+                    overflow: hidden;
+
+                    .logo-section-image {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .authorization {
+                    max-width: 380px;
+
+                    .authorization-form {
+                        flex-direction: column;
+                        gap: 10px;
+        
+                        input[type="text"] {
+                            width: 340px;
+                            height: 18px;
+        
+                            padding: 10px 20px;
+        
+                            background-color: rgba(0, 0, 0, 0.25);
+                            color: white;
+                            font-family: 'Roboto-Regular';
+                            font-size:16px;
+                            border: none;
+                            border-radius: 2px;
+        
+                            &::placeholder {
+                                color: white;
+                            }
+                        }
+        
+                        .label-description {
+                            margin-top: 10px;
+                            align-self: start;
+                            margin-left: 35px;
+                        }
+        
+                        .checkbox-label {
+        
+                            gap:15px;
+        
+                            input[type="checkbox"] {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+        
+                        input[type="submit"] {
+                            margin-top: 40px;
+                            width: 194px;
+                            height: 42px;
+                            background-color: transparent;
+                            border: 1px solid white;
+                            border-radius: 2px;
+                            color: white;
+        
+                            font-family: 'Roboto-Regular';
+                            font-size: 12px;
+        
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            p, a {
+                font-family: 'Roboto-Regular';
+                font-size: 16px;
+                color: white;
+    
+                &.bigger-text {
+                    font-size: 24px;
+                    color: white;
+                }
+    
+                text-decoration: none;
+            }
+    
+            .lower-contacts {
+    
+    
+                .logo-name {
+                    margin-bottom: 40px;
+                }
+    
+                .main-contacts {
+                    justify-content: space-between;
+                    align-items: start;
+                    gap: 90px;
+
+                    @media (max-width: 1180px) {
+                        flex-direction: column;
+                    }
+    
+                
+                .contact-placement {
+    
+                    max-width: 350px;
+                    line-height: 1.6;
+    
+                    flex-direction: column;
+                    align-items: start;
+                }
+    
+                .contact-info {
+                    width: 100%;
+                    align-items: start;
+    
+                    .contact-number {
+                        width: 100%;
+                        justify-content: space-between;
+    
+                        .contact-item {
+                            flex-direction: column;
+                            align-items: start;
+                            align-self: start;
+                            gap: 10px;
+    
+                            .phone-item {
+                                gap: 40px;
+                                justify-content: space-between;
+                                width: 100%;
+                            }
+    
+                        }
+                    }
+                }
+                }
+            }
+    
+            .contact-socials {
+                justify-content: right;
+                gap: 410px;
+                margin-top: 25px;
+                margin-bottom: 40px;
+    
+                .catalogue {
+                    a { 
+                        gap: 15px;
+                    }
+                }
+    
+                .socials {
+    
+                    gap: 45px;
+    
+                    .socials-icon {
+                        gap: 25px;
+                    }
+                }
+            }
+    
+        }
+        .copyright {
+            justify-content: space-between;
+            width: 100%;
+            height: 42px;
+    
+            .copyright-text {
+                p, a {
+                    font-size: 12;
+                    font-family: 'Roboto-Light';
+                    color: #E3DED9;
+                }
+    
+                gap: 15px;
+            }
+        }
+    }
+}
+
+.footer-form-description-text {
+    font-family: 'Roboto-Light';
+    font-size: 13px;
+    color: white;
+}
+
+.semitransparent-background {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-padding {
+    padding-top: 95px;
+}
+
+
+@media (max-width: 1180px) {
+    footer {
+        .footer-container {
+            .container {
+                .main-content {
+                    align-items: flex-start;
+                    .authorization {
+                        max-width: 312px;
+
+                        .authorization-form {
+                            gap: 8px;
+            
+                            input[type="text"] {
+                                width: 282px;
+                                height: 11px;
+            
+                                padding: 10px 15px;
+                                font-size:13px;
+                                border: none;
+                                border-radius: 2px;
+            
+                                &::placeholder {
+                                    color: white;
+                                }
+                            }
+            
+                            .label-description {
+                                margin-top: 10px;
+                                align-self: start;
+                                margin-left: 35px;
+                            }
+            
+                            .checkbox-label {
+            
+                                gap: 15px;
+            
+                                input[type="checkbox"] {
+                                    width: 19px;
+                                    height: 19px;
+                                }
+                            }
+            
+                            input[type="submit"] {
+                                margin-top: 18px;
+                                width: 159px;
+                                height: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-form-description-text {
+        font-size: 11px;
+    }
+
+    .footer-padding {
+        padding-top: 35px;
+    }
+}

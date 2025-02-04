@@ -1,0 +1,159 @@
+.main-logo {
+    .main-logo-image {
+        background-image: url('../../images/vacancies/main-logo-background.png');
+    }
+
+    .main-logo-empty {
+        height: 250px;
+    }
+
+    .modal {
+        height: 224px;
+    }
+}
+
+.vacancies {
+    background-color: #F5F5F5;
+    padding-bottom: 70px;
+
+    .grid-info-container {
+        grid-template-columns: repeat(2, 530px);
+        row-gap: 90px;
+
+        .grid-item {
+
+            .grid-title {
+                margin-bottom: 10px;
+
+                .grid-head-text {
+                    margin-top: 60px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+            }
+            p.grid-head-text {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.vacancy-form {
+    background-color: #F5F5F5;
+
+    .vacancy-form-container {
+        margin-bottom: 190px;
+        flex-direction: column;
+        gap: 55px;
+        width: 1110px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 70px 0;
+
+        .form-section {
+            gap: 170px;
+
+            .logo {
+                gap: 70px;
+            }
+
+            .main-form {
+                flex-direction: column;
+                gap: 25px;
+
+                .form-title {
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 100%;
+
+                    p {
+                        align-self: flex-start;
+                        font-family: 'Roboto-Regular';
+                        font-size: 28px;
+                        color: #6AB354;
+                    }
+                }
+
+                form {
+                    flex-direction: column;
+                    gap: 11px;
+                    width: 348px;
+
+                    input, label {
+                        font-family: 'Roboto-Regular';
+                        font-size: 10px;
+                        color: #1A171B;
+                    }
+
+                    input {
+                        padding-left: 8px;
+                        width: 100%;
+                        height: 29px;
+
+                        border: 1px solid #6AB354;
+                        border-radius: 5px;
+                        outline: none;
+
+                        &:focus {
+                            border: 1px solid #9B977C;
+                        }
+
+                        &::placeholder {
+                            color: #1A171B;
+                        }
+                    }
+
+                    input[type="submit"] {
+                        max-width: 113px;
+                        max-height: 22px;
+                        background: none;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    label.send-cv {
+                        gap: 7px;
+                        align-self: flex-start;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        margin: 2px 0 5px 11px;
+                    }
+                }
+            }
+        }
+
+        .placement-section {
+            flex-direction: column;
+            gap: 25px;
+
+            p {
+                font-family: 'Roboto-Regular';
+                font-size: 20px;
+            }
+
+            .title {
+                p {
+                    color: #6AB354;
+                }
+            }
+
+            .content {
+
+                text-align: center;
+                justify-content: space-between;
+                gap: 64px;
+
+                p {
+                    color: #1A171B;
+                }
+            }
+        }
+    }
+}

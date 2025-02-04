@@ -1,0 +1,147 @@
+.main-logo-text {
+    background-image: url('../../images/contacts/main-logo-background.png');
+    margin: 0;
+}
+
+section {
+    background-color: #F5F5F5;
+    height: 2400px;
+
+    .card-container {
+        position: relative;
+
+        .contacts-section {
+            transform: translateY(-50px);
+            position: absolute;
+            border-radius: 10px;
+            padding: 95px 0 66px 0;
+            width: 100%;
+            background-color: white;
+
+            .contact-text-info {
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 87px;
+
+
+            .logo-section {
+                align-items: flex-start;
+                gap: 115px;
+
+                .logo-image {
+                    margin-top: 11px;
+                }
+            }
+
+            .contact-text-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 35px;
+
+                .contact-item {
+                    gap: 142px;
+                    .contact {
+
+                        p {
+                            font-family: 'Roboto-Regular';
+                            font-size: 28px;
+                            color: #000000;
+                            line-height: 36px;
+                        }
+
+                        p.contact-title {
+                            color: #74B746;
+                        }
+
+                        p.contact-bold {
+                            font-weight: bold;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+            }
+
+            .contact-form {
+
+                .contact-form-container {
+                    flex-direction: column;
+                    border-radius: 10px;
+                    border: 1px solid #6AB354;
+                    padding: 27px 32px 41px 32px;
+                    max-width: min-content;
+                    gap: 33px;
+
+                .form-title {
+                    flex-direction: column;
+
+                    p {
+                        font-family: 'Roboto-Light';
+                        font-size: 16px;
+                        color: #6AB354;
+                        line-height: 1.2;
+                    }
+                }
+
+                form.main-form {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 11px;
+
+                    input[type="text"], label {
+                        color: #000000;
+                        font-family: 'Roboto-Regular';
+                    }
+
+                    label {
+                        font-size: 13px;
+
+                        &.label-text {
+                            margin-left: 30px;
+                            margin-top: 10px;
+                        }
+
+                        &.label-checkbox {
+                            gap: 17px;
+                        }
+
+                        max-width: 273px;
+                    }
+
+                    input[type="checkbox"] {
+                        width: 23px;
+                        height: 23px;
+                    }
+
+                    input[type="text"] {
+                        width: 380px;
+                        padding: 10px 22px;
+                        border: 1px solid #6AB354;
+                        border-radius: 2px;
+                        font-size: 16px;
+
+                        &::placeholder {
+                            color: #000000;
+                        }
+                    }
+
+                    input[type="submit"] {
+                        margin-top: 30px;
+                        align-self: center;
+                        width: 194px;
+                        height: 42px;
+                        background: none;
+                        border: 1px solid #6AB354;
+                        color: #6AB354;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                }
+            }
+
+        }
+    }
+}

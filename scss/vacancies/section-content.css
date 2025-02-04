@@ -1,0 +1,126 @@
+.main-logo .main-logo-image {
+  background-image: url("../../images/vacancies/main-logo-background.png");
+}
+.main-logo .main-logo-empty {
+  height: 250px;
+}
+.main-logo .modal {
+  height: 224px;
+}
+
+.vacancies {
+  background-color: #F5F5F5;
+  padding-bottom: 70px;
+}
+.vacancies .grid-info-container {
+  grid-template-columns: repeat(2, 530px);
+  row-gap: 90px;
+}
+.vacancies .grid-info-container .grid-item .grid-title {
+  margin-bottom: 10px;
+}
+.vacancies .grid-info-container .grid-item .grid-title .grid-head-text {
+  margin-top: 60px;
+}
+.vacancies .grid-info-container .grid-item p {
+  font-size: 20px;
+}
+.vacancies .grid-info-container .grid-item p.grid-head-text {
+  font-size: 28px;
+}
+
+.vacancy-form {
+  background-color: #F5F5F5;
+}
+.vacancy-form .vacancy-form-container {
+  margin-bottom: 190px;
+  flex-direction: column;
+  gap: 55px;
+  width: 1110px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 70px 0;
+}
+.vacancy-form .vacancy-form-container .form-section {
+  gap: 170px;
+}
+.vacancy-form .vacancy-form-container .form-section .logo {
+  gap: 70px;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form {
+  flex-direction: column;
+  gap: 25px;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form .form-title {
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form .form-title p {
+  align-self: flex-start;
+  font-family: "Roboto-Regular";
+  font-size: 28px;
+  color: #6AB354;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form {
+  flex-direction: column;
+  gap: 11px;
+  width: 348px;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input, .vacancy-form .vacancy-form-container .form-section .main-form form label {
+  font-family: "Roboto-Regular";
+  font-size: 10px;
+  color: #1A171B;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input {
+  padding-left: 8px;
+  width: 100%;
+  height: 29px;
+  border: 1px solid #6AB354;
+  border-radius: 5px;
+  outline: none;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input:focus {
+  border: 1px solid #9B977C;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input::-moz-placeholder {
+  color: #1A171B;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input::placeholder {
+  color: #1A171B;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input[type=submit] {
+  max-width: 113px;
+  max-height: 22px;
+  background: none;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form input[type=submit]:hover {
+  cursor: pointer;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form label.send-cv {
+  gap: 7px;
+  align-self: flex-start;
+  margin: 2px 0 5px 11px;
+}
+.vacancy-form .vacancy-form-container .form-section .main-form form label.send-cv:hover {
+  cursor: pointer;
+}
+.vacancy-form .vacancy-form-container .placement-section {
+  flex-direction: column;
+  gap: 25px;
+}
+.vacancy-form .vacancy-form-container .placement-section p {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+}
+.vacancy-form .vacancy-form-container .placement-section .title p {
+  color: #6AB354;
+}
+.vacancy-form .vacancy-form-container .placement-section .content {
+  text-align: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+.vacancy-form .vacancy-form-container .placement-section .content p {
+  color: #1A171B;
+}/*# sourceMappingURL=section-content.css.map */

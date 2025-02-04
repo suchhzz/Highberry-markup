@@ -1,0 +1,21 @@
+.delivery-map {
+    height: 100%;
+    margin-bottom: 150px;
+    .head {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .product-info {
+        gap: 55px;
+        margin-bottom: 68px;
+    }
+
+    .delivery {
+        .delivery-description {
+            margin: 0 200px;
+            margin-top: 75px;
+            gap: 65px;
+        }
+    }
+}
