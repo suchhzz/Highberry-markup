@@ -10,14 +10,13 @@ section .main-logo {
 
         flex-direction: column;
         align-items: start;
-        margin-right: 40px;
         padding-bottom: 67px;
         gap: 100px;
 
         >p {
             font-family: 'Roboto-Light';
             font-size: 60px;
-            max-width: 28%;
+            max-width: 30%;
             color: white;
             font-weight: 300;
         }

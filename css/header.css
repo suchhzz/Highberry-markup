@@ -100,3 +100,20 @@ header.transparent-background .header-container .menu i.menu-show {
 header.transparent-background.dark-background {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 1530px) {
+  header .header-container {
+    margin: 0 29px;
+  }
+}
+@media (max-width: 1200px) {
+  header .header-container .social-icons {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  header .header-container .logo-group a,
+  header .header-container .social-group {
+    display: none;
+  }
+}

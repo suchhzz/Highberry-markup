@@ -151,3 +151,33 @@ header {
         }
     }
 }
+
+
+@media (max-width: 1530px) {
+    header {
+        .header-container {
+            margin: 0 29px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        .header-container {
+            .social-icons {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        .header-container {
+            .logo-group a,
+            .social-group {
+                display: none;
+            }
+        }
+    }
+}
