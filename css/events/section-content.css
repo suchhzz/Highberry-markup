@@ -1,0 +1,9 @@
+.main-logo .main-logo-image {
+  background-image: url("../../images/vacancies/main-logo-background.png");
+}
+.main-logo .main-logo-empty {
+  height: 250px;
+}
+.main-logo .modal {
+  height: 224px;
+}

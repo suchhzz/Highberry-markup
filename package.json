@@ -1,0 +1,27 @@
+{
+  "name": "highberry",
+  "version": "1.0.0",
+  "description": "github pages deploy: https://suchhzz.github.io/Highberry-markup/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suchhzz/Highberry-markup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suchhzz/Highberry-markup/issues"
+  },
+  "homepage": "https://github.com/suchhzz/Highberry-markup#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.85.1"
+  }
+}

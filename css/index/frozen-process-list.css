@@ -1,0 +1,8 @@
+.berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line.highlight {
+  max-height: 135px;
+  height: 135px;
+}
+.berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
+  max-height: 120px;
+  opacity: 1;
+}

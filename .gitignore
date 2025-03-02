@@ -1,0 +1,11 @@
+node_modules/
+
+*.log
+
+*.swp
+*.swo
+
+.DS_Store
+Thumbs.db
+
+*.min.js

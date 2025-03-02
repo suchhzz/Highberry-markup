@@ -1,0 +1,48 @@
+section .main-logo {
+  padding-top: 155px;
+  background-image: url("../../images/section/main-logo/main-logo-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+section .main-logo .main-content {
+  flex-direction: column;
+  align-items: start;
+  margin-right: 40px;
+  padding-bottom: 67px;
+  gap: 100px;
+}
+section .main-logo .main-content > p {
+  font-family: "Roboto-Light";
+  font-size: 60px;
+  max-width: 28%;
+  color: white;
+  font-weight: 300;
+}
+section .main-logo .main-content .lower-buttons {
+  align-self: end;
+  gap: 47px;
+}
+section .main-logo .main-content .lower-buttons .youtube-link {
+  border: 0.5px solid white;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 27px;
+  padding: 10px 30px;
+}
+section .main-logo .main-content .lower-buttons .youtube-link p {
+  font-family: "Roboto-Thin";
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+}
+section .main-logo .main-content .lower-buttons .arrow-button {
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: transparent;
+}
+section .main-logo .main-content .lower-buttons .arrow-button:hover {
+  cursor: pointer;
+}
