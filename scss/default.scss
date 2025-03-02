@@ -348,6 +348,9 @@ i.menu-item-arrow-down {
 .berry-list-info {
     margin-bottom: 105px;
     .berry-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
         width: 100%;
         gap: 90px;
         background-color: #ECEDEC;
