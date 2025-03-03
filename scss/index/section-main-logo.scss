@@ -53,3 +53,59 @@ section .main-logo {
         }
     }
 }
+
+@media (max-width: 1515px) {
+    section .main-logo {
+        .main-content {
+            margin: 0 50px;
+            
+            >p {
+                max-width: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    section .main-logo {
+        .main-content {
+
+            >p {
+                font-size: 46px;
+            }
+
+            .lower-buttons {
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 515px) {
+    section .main-logo {
+
+        height: 545px;    
+
+        .main-content {
+            height: 100%;
+            justify-content: flex-end;
+
+            .heading-logo {
+                display: none;
+            }
+
+            >p {
+                font-size: 32px;
+                max-width: 230px;
+                margin-bottom: 50px;
+                line-height: 50px;
+            }
+
+            .lower-buttons {
+                display: none;
+            }
+        }
+    }
+}
