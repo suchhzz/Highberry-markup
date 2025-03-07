@@ -154,7 +154,8 @@ a.link-more-info img {
   height: 100%;
   background-color: white;
 }
-.menu-overlay .menu-block p, .menu-overlay .menu-block a {
+.menu-overlay .menu-block p,
+.menu-overlay .menu-block a {
   font-family: "Roboto-Light";
   color: #6AB354;
 }
@@ -261,7 +262,8 @@ a.link-more-info img {
   width: 100%;
   justify-content: space-between;
 }
-.menu-overlay .menu-block .menu-container .menu-contacts .contact a, .menu-overlay .menu-block .menu-container .menu-contacts .contact p {
+.menu-overlay .menu-block .menu-container .menu-contacts .contact a,
+.menu-overlay .menu-block .menu-container .menu-contacts .contact p {
   font-family: "Roboto-Regular";
   font-size: 16px;
 }
@@ -303,7 +305,7 @@ i.menu-item-arrow-down:hover {
   margin-bottom: 105px;
 }
 .berry-list-info .berry-container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
   width: 100%;
   background-color: #ECEDEC;
   align-items: start;
@@ -337,11 +339,11 @@ i.menu-item-arrow-down:hover {
   height: 900px;
   width: 100%;
   justify-content: left;
-  padding-left: 90px;
 }
 .berry-list-info .berry-container .berry-list .berry-list-container {
   flex-direction: column;
   align-items: start;
+  margin-left: 90px;
 }
 .berry-list-info .berry-container .berry-list .berry-list-container .accordion {
   gap: 40px;
@@ -717,7 +719,8 @@ i.menu-item-arrow-down:hover {
   flex-direction: column;
   gap: 30px;
 }
-.news-content .news-content-container .news-content p, .news-content .news-content-container .news-content li {
+.news-content .news-content-container .news-content p,
+.news-content .news-content-container .news-content li {
   font-family: "Roboto-Regular";
   font-size: 16px;
   color: #000000;
@@ -893,5 +896,82 @@ i.arrow-slider-bar.left-arrow-slider {
   a.link-more-info {
     display: block;
     margin-left: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .berry-list-info {
+    margin-bottom: 50px;
+  }
+  .berry-list-info .berry-container {
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 700px;
+    height: 100%;
+    overflow: hidden;
+  }
+  .berry-list-info .berry-container .image-section {
+    height: 100%;
+    width: 100%;
+  }
+  .berry-list-info .berry-container .image-section .berry-list-image-container {
+    height: 100%;
+    width: 100%;
+  }
+  .berry-list-info .berry-container .berry-list {
+    height: 100%;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container {
+    margin-left: 30px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .berry-list-title {
+    margin-bottom: 10px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .berry-list-title .head-text {
+    font-size: 38px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon {
+    margin-top: 5px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-title {
+    font-size: 22px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 845px) {
+  .berry-list-info {
+    margin-bottom: 40px;
+  }
+  .berry-list-info .berry-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px auto;
+  }
+  .berry-list-info .berry-container .berry-list {
+    height: 100%;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container {
+    margin-left: 30px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon {
+    margin-top: 3px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-title {
+    font-size: 20px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content {
+    font-size: 12px;
+  }
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
+    max-height: 148px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .head-text {
+    font-size: 32px;
+  }
+}
+@media (max-width: 820px) {
+  .head-text {
+    font-size: 24px;
   }
 }
