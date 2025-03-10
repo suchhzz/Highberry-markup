@@ -127,6 +127,10 @@
     .cultivation {
         .container {
             .image-info {
+
+                width: 100%;
+                height: 100%;
+
                 row-gap: 5px;
 
                 .grid-item {
@@ -143,6 +147,10 @@
                 }
 
                 .image-section {
+
+                    width: 100%;
+                    height: 100%;
+
                     img {
                         width: 100%;
                         height: 100%;
