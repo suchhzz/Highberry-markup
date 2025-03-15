@@ -704,10 +704,6 @@ i.menu-item-arrow-down {
             top: 0px;
             transform: translate(0, -50%);
 
-            @media (max-width: 1180px) {
-                width: 44px;
-                height: 44px;
-            }
         }
     }
 }
@@ -1253,6 +1249,12 @@ i.arrow-slider-bar {
         grid-template-rows: repeat(3, 261px);
     
         .grid-item {
+
+            .grid-item-logo {
+                width: 44px;
+                height: 44px;
+            }
+
             .grid-title {
                 gap: 13px;
                 margin-bottom: 10px;
@@ -1272,6 +1274,91 @@ i.arrow-slider-bar {
                 font-size: 20px !important;
                 margin-top: 30px !important;
             }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-info-container {
+        justify-content: space-between;
+        column-gap: 0 !important;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-info-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 1fr);
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+        row-gap: 40px !important;
+
+        .grid-item {
+            .grid-main {
+                p {
+                    font-family: 'Roboto-Light';
+                }
+            }
+        }
+    }
+
+    .freezing-process {
+        .grid-info-container {
+            .item1 { order: 2; }
+            .item2 { order: 1; }
+            .item3 { order: 3; }
+            .item4 { order: 4; }
+            .item5 { order: 6; }
+            .item6 { order: 5; } 
+            .item7 { order: 7; }
+            .item8 { order: 8; }
+            .item9 { order: 10; }
+            .item10 { order: 9; }
+            .item11 { order: 11; }
+            .item12 { order: 12; }
+            .item13 { order: 14; }
+            .item14 { order: 13; }
+            .item15 { order: 15; }
+            .item16 { order: 16; }
+            .item17 { order: 18; }
+            .item18 { order: 17; }
+            .item19 { order: 19; }
+            .item20 { order: 20; }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    
+    .grid-info-container {
+        margin: 0 20px;
+    }
+}
+
+// map
+
+@media (max-width: 1080px) {
+    .map-image {
+        margin: 0 30px !important;
+        &-container {
+            width: 100%;
+            margin-top: 62px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .map-image {
+        &-container {
+            margin-top: 20px;
         }
     }
 }
