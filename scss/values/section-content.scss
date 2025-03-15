@@ -83,3 +83,226 @@
         }
     }
 }
+
+// cards
+@media (max-width: 1300px) {
+    .content-cards {
+        padding: 75px 30px 100px 30px;
+        .main-content {
+            width: 100%;
+            justify-content: space-between;
+            column-gap: 40px;
+            row-gap: 50px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 350px);
+        }
+    }
+
+    .logo-content {
+        &-container {
+
+            padding: 40px 20px !important;
+
+            .logo-title {
+                justify-content: space-between;
+
+                .title {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .content-cards {
+        .main-content {
+            .grid-card {
+
+                &-icon {
+                    img {
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+
+                .card-title {
+                    margin-top: 40px;
+
+                    p {
+                        font-size: 25px;
+                    }
+                }
+
+                .card-text {
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .content-cards {
+        .main-content {
+
+            grid-template-rows: auto;
+
+            .grid-card {
+                gap: 15px;
+
+                &-icon {
+                    img {
+                        width: 43px;
+                        height: 43px;
+                    }
+                }
+
+                .card-title {
+                    margin-top: 40px;
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+
+                .card-text {
+                    p {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    padding: 0 20px;
+                    padding-bottom: 20px;
+                }
+
+                &.lower-grid-item {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
+        }
+    }
+
+    .logo-content {
+        &-container {
+            .logo-title {
+
+                gap: 40px !important;
+
+                .logo-image {
+                    width: 100%;
+                    img {
+                        width: 90%;
+                        height: 90%;
+                        object-fit: contain;
+                    }
+                }
+
+                .title {
+                    .green-text {
+                        font-size: 33px !important;
+                    }
+
+                    .default-text {
+                        font-size: 30px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .logo-content {
+        &-container {
+            .logo-title {
+
+                gap: 30px !important;
+
+                .logo-image {
+                    width: 100%;
+                }
+
+                .title {
+                    .green-text {
+                        font-size: 26px !important;
+                    }
+
+                    .default-text {
+                        font-size: 24px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .content-cards {
+
+        padding: 75px 60px 100px 60px;
+
+        .main-content {
+            grid-template-columns: 1fr !important;
+            grid-template-rows: auto;
+            row-gap: 45px;
+
+            .grid-card {
+                &.lower-grid-item {
+                    grid-column: auto;
+                }
+                &-icon {
+                    img {
+                        width: 52px;
+                        height: 52px;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-content {
+        &-container {
+
+            padding: 20px !important;
+            padding-bottom: 50px !important;
+
+            .logo-title {
+                gap: 20px !important;
+                flex-direction: column;
+
+                .logo-image {
+                    max-width: 150px;
+                    margin: 0 auto;
+                }
+
+                .title {
+                    gap: 20px !important;
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .content-cards {
+        padding: 46px 20px 36px 20px;
+    }
+
+    .logo-content {
+        &-container {
+            .logo-title {
+                .logo-image {
+                    max-width: 110px;
+                }
+            }
+        }
+    }
+}
