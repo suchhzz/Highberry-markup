@@ -16,6 +16,10 @@
   grid-template-columns: repeat(2, 530px);
   row-gap: 90px;
 }
+.vacancies .grid-info-container .grid-item-logo {
+  width: 70px;
+  height: 70px;
+}
 .vacancies .grid-info-container .grid-item .grid-title {
   margin-bottom: 10px;
 }
@@ -120,4 +124,12 @@
 }
 .vacancy-form .vacancy-form-container .placement-section .content p {
   color: #1A171B;
+}
+
+@media (max-width: 1300px) {
+  .vacancies .vacancies-container .grid-info-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px;
+    column-gap: 50px !important;
+  }
 }

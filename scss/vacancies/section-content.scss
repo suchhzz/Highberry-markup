@@ -22,6 +22,11 @@
 
         .grid-item {
 
+            &-logo {
+                width: 70px;
+                height: 70px;
+            }
+
             .grid-title {
                 margin-bottom: 10px;
 
@@ -152,6 +157,20 @@
 
                 p {
                     color: #1A171B;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .vacancies {
+        .vacancies-container {
+            .grid-info-container {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0 50px;
+                column-gap: 50px !important;
+                .grid-item {
                 }
             }
         }
