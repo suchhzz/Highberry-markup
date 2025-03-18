@@ -71,7 +71,8 @@
   gap: 11px;
   width: 348px;
 }
-.vacancy-form .vacancy-form-container .form-section .main-form form input, .vacancy-form .vacancy-form-container .form-section .main-form form label {
+.vacancy-form .vacancy-form-container .form-section .main-form form input,
+.vacancy-form .vacancy-form-container .form-section .main-form form label {
   font-family: "Roboto-Regular";
   font-size: 10px;
   color: #1A171B;
@@ -127,9 +128,301 @@
 }
 
 @media (max-width: 1300px) {
+  .vacancies {
+    padding-bottom: 40px;
+  }
   .vacancies .vacancies-container .grid-info-container {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
     padding: 0 50px;
     column-gap: 50px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-title p {
+    margin-top: 50px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main {
+    padding-bottom: 40px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main p {
+    font-family: "Roboto-Light";
+    font-size: 16px;
+  }
+  .vacancy-form {
+    padding: 0 50px;
+    padding-bottom: 40px;
+    width: auto;
+  }
+  .vacancy-form-container {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .vacancy-form-container .form-section .logo {
+    gap: 0 !important;
+  }
+  .vacancy-form-container .form-section .logo .form-logo {
+    padding-right: 50px !important;
+    width: 220px;
+    border-right: 1px solid #6AB354;
+  }
+  .vacancy-form-container .form-section .logo .form-logo-divider {
+    display: none;
+  }
+  .vacancy-form-container .form-section .main-form .form-title {
+    text-align: center;
+  }
+  .vacancy-form-container .form-section .main-form .form-title p {
+    font-size: 26px !important;
+    width: 100%;
+  }
+  .vacancy-form-container .placement-section p {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .vacancies .vacancies-container .grid-info-container {
+    margin: 0;
+    column-gap: 30px !important;
+    row-gap: 45px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-title p {
+    margin-top: 40px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main {
+    padding-bottom: 40px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main p {
+    font-size: 14px;
+  }
+  .vacancy-form {
+    padding: 0 50px;
+    width: auto;
+  }
+  .vacancy-form-container {
+    width: 100% !important;
+  }
+  .vacancy-form-container .form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 0 !important;
+    width: 100%;
+  }
+  .vacancy-form-container .form-section .logo .form-logo {
+    padding-right: 40px !important;
+    width: 200px;
+  }
+  .vacancy-form-container .form-section .main-form .form-title p {
+    font-size: 24px !important;
+  }
+  .vacancy-form-container .form-section .main-form form {
+    width: 300px !important;
+  }
+  .vacancy-form-container .placement-section p {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 900px) {
+  .vacancy-form {
+    padding: 0 50px;
+    width: auto;
+  }
+  .vacancy-form-container .form-section .logo .form-logo {
+    padding-right: 30px !important;
+    width: 180px;
+  }
+  .vacancy-form-container .form-section .main-form .form-title p {
+    font-size: 22px !important;
+  }
+  .vacancy-form-container .form-section .main-form form {
+    width: 280px !important;
+  }
+  .vacancy-form-container .placement-section p {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 800px) {
+  .vacancies .vacancies-container .grid-info-container {
+    max-width: 100%;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item-logo {
+    width: 45px;
+    height: 45px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-title p {
+    font-size: 18px !important;
+    margin-top: 35px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main p {
+    font-size: 12px;
+  }
+  .vacancy-form {
+    padding: 0 50px;
+    width: auto;
+  }
+  .vacancy-form-container {
+    width: 100% !important;
+  }
+  .vacancy-form-container .form-section .logo .form-logo {
+    width: 160px;
+  }
+  .vacancy-form-container .form-section .main-form .form-title p {
+    font-size: 20px !important;
+  }
+  .vacancy-form-container .form-section .main-form form {
+    width: 250px !important;
+  }
+  .vacancy-form-container .placement-section p {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 750px) {
+  .vacancy-form-container .form-section .logo .form-logo {
+    padding: 0;
+    border: none;
+  }
+  .vacancy-form-container .form-section .main-form {
+    justify-self: flex-start;
+  }
+  .vacancy-form-container .form-section .main-form form {
+    width: 220px !important;
+  }
+}
+@media (max-width: 600px) {
+  .vacancies {
+    padding-bottom: 35px;
+  }
+  .vacancies .vacancies-container .grid-info-container {
+    grid-template-columns: 1fr;
+    padding: 0 80px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item-logo {
+    width: 45px;
+    height: 45px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-title p {
+    font-size: 16px !important;
+    margin-top: 35px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main {
+    padding-bottom: 40px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main p {
+    font-family: "Roboto-Light";
+    font-size: 12px;
+  }
+  .vacancy-form {
+    padding: 0 80px;
+  }
+  .vacancy-form-container {
+    margin-bottom: 30px !important;
+    gap: 0 !important;
+    padding-bottom: 20px !important;
+    padding-top: 15px !important;
+  }
+  .vacancy-form-container .form-section {
+    padding-bottom: 15px;
+    position: relative;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .vacancy-form-container .form-section::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    border-bottom: 1px solid #6AB354;
+    bottom: 0;
+  }
+  .vacancy-form-container .form-section .logo {
+    display: none;
+  }
+  .vacancy-form-container .form-section .main-form {
+    justify-self: center;
+  }
+  .vacancy-form-container .form-section .main-form .form-title p {
+    font-size: 20px !important;
+  }
+  .vacancy-form-container .form-section .main-form form {
+    width: 250px !important;
+  }
+  .vacancy-form-container .placement-section {
+    padding-top: 15px;
+    gap: 15px !important;
+  }
+  .vacancy-form-container .placement-section .title {
+    text-align: center;
+  }
+  .vacancy-form-container .placement-section .content {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+}
+@media (max-width: 480px) {
+  .vacancies .vacancies-container .grid-info-container {
+    padding: 0 30px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-title p {
+    font-size: 14px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main {
+    padding-bottom: 35px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main p {
+    font-size: 12px;
+  }
+  .vacancy-form {
+    padding: 0 30px;
+    padding-bottom: 35px;
+  }
+  .vacancy-form-container .form-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .vacancy-form-container .form-section .logo {
+    display: none;
+  }
+  .vacancy-form-container .form-section .main-form {
+    width: 100%;
+  }
+  .vacancy-form-container .form-section .main-form form {
+    width: 90% !important;
+  }
+  .vacancy-form-container .placement-section p {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 360px) {
+  .vacancies {
+    padding-bottom: 35px;
+  }
+  .vacancies .vacancies-container .grid-info-container {
+    padding: 0 20px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item-logo {
+    width: 35px;
+    height: 35px;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-title p {
+    font-size: 12px !important;
+    margin-top: 25px !important;
+  }
+  .vacancies .vacancies-container .grid-info-container .grid-item .grid-main p {
+    font-size: 10px;
+  }
+  .vacancy-form {
+    padding: 0 20px;
   }
 }
