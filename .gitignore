@@ -9,3 +9,5 @@ node_modules/
 Thumbs.db
 
 *.min.js
+
+css/
