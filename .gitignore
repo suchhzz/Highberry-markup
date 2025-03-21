@@ -1,4 +1,5 @@
 node_modules/
+css/
 
 *.log
 
@@ -9,5 +10,3 @@ node_modules/
 Thumbs.db
 
 *.min.js
-
-css/
