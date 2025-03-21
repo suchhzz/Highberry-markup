@@ -1,131 +1,138 @@
-.berry-slider {
-    .berry-slider-container {
-        height: 100%;
-        background-color: #ECEDEC;
-        gap: 100px;
-        .image-slider {
-            height: 619px;
-            width: 100%;
-            align-items: center;
-            position: relative;
+.main-page {
+    .berry-slider {
+        .berry-slider-container {
+            height: 100%;
+            background-color: #ECEDEC;
+            gap: 100px;
 
-            .image-item {
-                align-self: center;
-                position: absolute;
-                top: auto;
-                right: 0;
+            .image-slider {
+                height: 619px;
+                width: 100%;
+                align-items: center;
+                position: relative;
 
-                &.first {
-                    height: 100%;
-                    z-index: 5;
-                    margin-right: 176px;
-                }
-                
-                &.second {
-                    height: 90%;
-                    z-index: 4;
-                    margin-right: 132px;
-                }
-                
-                &.third {
-                    height: 80%;
-                    z-index: 3;
-                    margin-right: 88px;
-                }
-                
-                &.fourth {
-                    height: 70%;
-                    z-index: 2;
-                    margin-right: 44px;
-                }
+                .image-item {
+                    align-self: center;
+                    position: absolute;
+                    top: auto;
+                    right: 0;
 
-                &.fifth {
-                    height: 60%;
-                    z-index: 1;
-                    margin-right: 0;
-                }
+                    &.first {
+                        height: 100%;
+                        z-index: 5;
+                        margin-right: 176px;
+                    }
 
-                transition: height 0.2s ease-out, z-index 0.2s ease-out, margin-right 0.2s ease-out;
+                    &.second {
+                        height: 90%;
+                        z-index: 4;
+                        margin-right: 132px;
+                    }
+
+                    &.third {
+                        height: 80%;
+                        z-index: 3;
+                        margin-right: 88px;
+                    }
+
+                    &.fourth {
+                        height: 70%;
+                        z-index: 2;
+                        margin-right: 44px;
+                    }
+
+                    &.fifth {
+                        height: 60%;
+                        z-index: 1;
+                        margin-right: 0;
+                    }
+
+                    transition: height 0.2s ease-out,
+                    z-index 0.2s ease-out,
+                    margin-right 0.2s ease-out;
+                }
             }
-        }
 
-        .image-info {
-            width: 100%;
-            flex-direction: column;
-            align-items: start;
-            gap: 25px;
+            .image-info {
+                width: 100%;
+                flex-direction: column;
+                align-items: start;
+                gap: 25px;
 
-            .info-content {
-                gap: 37px;
+                .info-content {
+                    gap: 37px;
 
-                .info-content-icon {
-                    height: 100%;
-                    align-self: start;
+                    .info-content-icon {
+                        height: 100%;
+                        align-self: start;
 
-                    i {
-                        margin-top: 10px;
-                    }
-                }
-
-                .info-content-main {
-
-                    gap: 7px;
-                    flex-direction: column;
-                    align-items: start;
-
-                    .info-content-title {
-    
-                        p {
-                            font-family: 'Roboto-Light';
-                            font-size: 28px;
-                            color: #1A171B;
+                        i {
+                            margin-top: 10px;
                         }
                     }
-    
-                    .info-content-description {
 
-                        line-height: 1.6;
-                        max-height: 0;
-                        overflow: hidden;
-                        p {
-                            font-family: 'Roboto-Light';
-                            font-size: 16px;
-                            color: #1A171B;
-                        }
-
-                        a {
-                            margin: 0;
-                        }
-
-                        transition: max-height 0.2s ease-out;
-                    }
-    
-                }
-                &.selected {
                     .info-content-main {
+
+                        gap: 7px;
+                        flex-direction: column;
+                        align-items: start;
+
                         .info-content-title {
+
                             p {
-                                color: #3A7611;
+                                font-family: 'Roboto-Light';
+                                font-size: 28px;
+                                color: #1A171B;
+                            }
+                        }
+
+                        .info-content-description {
+
+                            line-height: 1.6;
+                            max-height: 0;
+                            overflow: hidden;
+
+                            p {
+                                font-family: 'Roboto-Light';
+                                font-size: 16px;
+                                color: #1A171B;
+                            }
+
+                            a {
+                                margin: 0;
+                            }
+
+                            transition: max-height 0.2s ease-out;
+                        }
+
+                    }
+
+                    &.selected {
+                        .info-content-main {
+                            .info-content-title {
+                                p {
+                                    color: #3A7611;
+                                }
+                            }
+                        }
+
+                        .info-content-description {
+                            max-height: 50px;
+
+                            transition: max-height 0.2s ease-out;
+                        }
+
+                        .info-content-icon {
+
+                            .ellipse {
+                                background-image: url('../../images/section/berry-list-info/checked-ellipse.png');
                             }
                         }
                     }
 
-                    .info-content-description {
-                        max-height: 50px;
-
-                        transition: max-height 0.2s ease-out;
+                    &:hover {
+                        cursor: pointer;
                     }
-
-                    .info-content-icon {
-                        
-                        .ellipse {
-                            background-image: url('../../images/section/berry-list-info/checked-ellipse.png');
-                        }
-                    }
-                }
-
-                &:hover {
-                    cursor: pointer;
                 }
             }
         }
