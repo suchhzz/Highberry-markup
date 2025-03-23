@@ -1621,13 +1621,18 @@ i.product-list-item-arrow-down {
 // grid-info-container 
 @media (max-width: 1300px) {
     .grid-info-container {
-        column-gap: 80px !important;
-        row-gap: 70px !important;
+        gap: 35px !important;
 
         grid-template-columns: repeat(2, 349px);
         grid-template-rows: repeat(3, 261px);
 
         .grid-item {
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
             .grid-item-logo {
                 width: 44px;
