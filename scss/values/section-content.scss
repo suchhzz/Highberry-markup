@@ -102,6 +102,9 @@
         }
 
         .logo-content {
+
+            background-color: #fff;
+
             &-container {
 
                 padding: 40px 20px !important;
@@ -151,6 +154,8 @@
 
     @media (max-width: 940px) {
         .content-cards {
+            padding: 75px 30px 20px 30px;
+
             .main-content {
 
                 grid-template-rows: auto;
@@ -250,7 +255,7 @@
     @media (max-width: 670px) {
         .content-cards {
 
-            padding: 75px 60px 100px 60px;
+            padding: 55px 60px 10px 60px;
 
             .main-content {
                 grid-template-columns: 1fr !important;
