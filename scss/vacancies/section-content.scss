@@ -167,6 +167,16 @@
     }
 
     @media (max-width: 1300px) {
+        .main-logo {
+            .main-logo-empty {
+                height: 180px;
+            }
+
+            .modal {
+                transform: translate(-50%, -15%);
+            }
+        }
+
         .vacancies {
             padding-bottom: 40px;
 
@@ -250,7 +260,29 @@
         }
     }
 
+    @media (max-width: 1180px) {
+        .main-logo {
+            .main-logo-empty {
+                height: 180px;
+            }
+
+            .modal {
+                transform: translate(-50%, -25%);
+            }
+        }
+    }
+
     @media (max-width: 1100px) {
+        .main-logo {
+            .main-logo-empty {
+                height: 180px;
+            }
+
+            .modal {
+                transform: translate(-50%, -15%);
+            }
+        }
+
         .vacancies {
             .vacancies-container {
                 .grid-info-container {
@@ -468,12 +500,37 @@
         }
     }
 
+    @media (max-width: 740px) {
+        .main-logo {
+            .main-logo-empty {
+                height: 180px;
+            }
+
+            .modal {
+                transform: translate(-50%, -5%);
+            }
+        }
+    }
+
     @media (max-width: 600px) {
+
+        
+        .main-logo {
+            .main-logo-empty {
+                height: 150px;
+            }
+
+            .modal {
+                transform: translate(-50%, 10%);
+            }
+        }
+
         .vacancies {
             padding-bottom: 35px;
 
             .vacancies-container {
                 .grid-info-container {
+                    row-gap: 40px !important;
                     grid-template-columns: 1fr;
                     padding: 0 80px;
 
@@ -511,7 +568,7 @@
             padding: 0 80px;
 
             &-container {
-                margin-bottom: 30px !important;
+                margin-bottom: 0 !important;
                 gap: 0 !important;
                 padding-bottom: 20px !important;
                 padding-top: 15px !important;
@@ -604,8 +661,6 @@
         .vacancy-form {
 
             padding: 0 30px;
-            padding-bottom: 35px;
-
             &-container {
                 .form-section {
 
@@ -669,7 +724,20 @@
 
 
         .vacancy-form {
-            padding: 0 20px;
+            padding: 20px 0 0 0 !important;
+        }
+    }
+
+    @media (max-width: 350px) {
+        
+        .main-logo {
+            .main-logo-empty {
+                height: 150px;
+            }
+
+            .modal {
+                transform: translate(-50%, 20%);
+            }
         }
     }
 }
