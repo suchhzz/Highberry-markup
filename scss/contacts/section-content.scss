@@ -24,7 +24,6 @@
                     gap: 15px;
                     margin-bottom: 87px;
 
-
                     .logo-section {
                         align-items: flex-start;
                         gap: 115px;
@@ -34,10 +33,12 @@
                         }
                     }
 
-                    .contact-text-info {
+                    &--wrapper {
                         flex-direction: column;
                         align-items: flex-start;
                         gap: 35px;
+
+
 
                         .contact-item {
                             gap: 142px;
@@ -145,6 +146,402 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .contacts-page {
+        section {
+
+            .card-container {
+
+                .contacts-section {
+
+                    .contact-text-info {
+                        padding: 0 60px;
+                        display: grid;
+                        grid-template-columns: 75% 25%;
+                        grid-template-rows: auto;
+                        gap: 0;
+
+
+                        .logo-section {
+                            align-items: flex-start;
+                            gap: 0;
+
+                            .line-divider {
+                                display: none;
+                            }
+                        }
+
+                        &--wrapper {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 35px;
+                            border-right: 1px solid #6AB354;
+                            width: 90%;
+
+                            .contact-item {
+                                gap: 0;
+                                display: grid;
+                                grid-template-columns: auto 1fr;
+                                grid-template-rows: auto;
+                                width: 100%;
+                                gap: 60px;
+
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+
+                                .contact {
+                                    p {
+                                        font-size: 26px;
+                                        color: #000000;
+                                        line-height: 34px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .contacts-page {
+        section {
+            .card-container {
+                .contacts-section {
+                    .contact-text-info {
+                        padding: 0 60px;
+                        display: grid;
+                        grid-template-columns: 75% 25%;
+                        grid-template-rows: auto;
+
+
+                        .logo-section {
+                            align-items: flex-start;
+                            gap: 0;
+
+                            .line-divider {
+                                display: none;
+                            }
+
+                            .logo-image {
+                                width: 200px;
+                            }
+                        }
+
+                        &--wrapper {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 35px;
+                            
+                            .contact-item {
+
+                                img {
+                                    width: 55px;
+                                    height: 55px;
+                                }
+    
+                                gap: 0;
+                                display: grid;
+                                grid-template-columns: auto 1fr;
+                                grid-template-rows: auto;
+                                width: 100%;
+                                gap: 60px;
+
+                                .contact {
+                                    p {
+                                        font-size: 24px;
+                                        color: #000000;
+                                        line-height: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .contacts-page {
+        section {
+            .card-container {
+                .contacts-section {
+                    .contact-text-info {
+
+                        .logo-section {
+                            
+                            .logo-image {
+                                width: 170px;
+                            }
+                        }
+
+                        &--wrapper {
+                            .contact-item {
+
+                                
+                                img {
+                                    width: 45px;
+                                    height: 45px;
+                                }
+
+                                .contact {
+                                    p {
+                                        font-size: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .contacts-page {
+        section {
+            .card-container {
+                .contacts-section {
+                    .contact-text-info {
+
+                        .logo-section {
+                            position: relative;
+                            .logo-image {
+                                width: 145px;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                height: 150%;
+                                width: 1px;
+                                border-left: 2px solid #6AB354;
+                                top: 0%;
+                                left: -50%;
+                            }
+                        }
+
+                        &--wrapper {
+                            border: none;
+                            gap: 90px;
+                            .contact-item {
+
+                                width: 80%;
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+
+                                position: relative;
+
+                                .contact {
+                                    p {
+                                        font-size: 20px;
+                                    }
+
+                                    &-title {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0%;
+                                        transform: translateY(-150%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .contacts-page {
+        section {
+            .card-container {
+                .contacts-section {
+                    .contact-text-info {
+                        grid-template-columns: 1fr;
+
+                        .logo-section {
+                            display: none;
+                        }
+
+                        &--wrapper {
+                            border: none;
+                            gap: 70px;
+                            width: 100%;
+
+                            .contact-item {
+
+                                width: 100%;
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+
+                                position: relative;
+
+                                .contact {
+                                    p {
+                                        font-size: 17px;
+                                    }
+
+                                    &-title {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0%;
+                                        transform: translateY(-150%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        width: 100%;
+
+                        .contact-form-container {
+                            width: 100%;
+                            max-width: 100%;
+                            margin: 0 30px;
+
+                            .form-title {
+                                text-align: center;
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .main-form {
+
+                                width: 100%;
+
+                                input[type="text"] {
+                                    width: 100% !important;
+                                    box-sizing: border-box;
+                                    font-size: 14px !important;
+                                }
+
+                                input[type="submit"] {
+                                    width: 150px !important;
+                                    font-size: 12px;
+                                }
+
+                                label {
+                                    font-size: 11px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts-page {
+        section {
+            .card-container {
+                .contacts-section {
+                    .contact-text-info {
+                        &--wrapper {
+
+                            gap: 55px;
+
+                            .contact-item {
+                                .contact {
+                                    p {
+                                        font-size: 14px;
+                                    }
+
+                                    &-title {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0%;
+                                        transform: translateY(-150%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        width: 100%;
+
+                        .contact-form-container {
+                            padding: 20px 15px;
+
+                            .form-title {
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .main-form {
+                                input[type="text"] {
+                                    font-size: 12px !important;
+                                }
+
+                                input[type="submit"] {
+                                    font-size: 10px;
+                                    margin-top: 10px !important;
+                                }
+
+                                label {
+                                    font-size: 10px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts-page {
+        section {
+            .card-container {
+                .contacts-section {
+                    .contact-text-info {
+                        &--wrapper {
+
+                            gap: 40px;
+
+                            .contact-item {
+                                .contact {
+                                    p {
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        width: 100%;
+
+                        .contact-form-container {
+                            padding: 20px 15px;
+                        }
+                    }
+                }
             }
         }
     }
