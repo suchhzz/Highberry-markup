@@ -1814,7 +1814,7 @@ i.product-list-item-arrow-down {
         padding: 0 30px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
 
         .image-card-item {
             .card-image {
@@ -1892,6 +1892,7 @@ i.product-list-item-arrow-down {
     .image-card-container {
         row-gap: 20px;
         column-gap: 30px;
+        margin-bottom: 0;
 
         .image-card-item {
             .text-content {

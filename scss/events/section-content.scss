@@ -3,13 +3,81 @@
         .main-logo-image {
             background-image: url('../../images/vacancies/main-logo-background.png');
         }
-    
+
         .main-logo-empty {
             height: 250px;
         }
-    
+
         .modal {
             height: 224px;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .main-logo {
+
+            .modal {
+                transform: translate(-50%, -10%);
+            }
+
+            .main-logo-empty {
+                height: 150px;
+            }
+        }
+    }
+
+    @media (max-width: 1180px) {
+        .main-logo {
+
+            .modal {
+                transform: translate(-50%, -10%);
+            }
+
+            .main-logo-empty {
+                height: 180px;
+            }
+        }
+    }
+
+    @media (max-width: 740px) {
+
+
+        .main-logo {
+
+            .modal {
+                transform: translate(-50%, 0%);
+            }
+
+            .main-logo-empty {
+                height: 150px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .main-logo {
+
+            .modal {
+                transform: translate(-50%, 10%);
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .main-logo {
+
+            .modal {
+                transform: translate(-50%, 20%);
+            }
+        }
+    }
+
+    @media (max-width: 350px) {
+        .main-logo {
+
+            .modal {
+                transform: translate(-50%, 30%);
+            }
         }
     }
 }
