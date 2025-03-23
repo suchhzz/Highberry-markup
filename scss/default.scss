@@ -1398,24 +1398,136 @@ i.product-list-item-arrow-down {
 
 // modal popup
 
+@media (max-width: 1500px) {
+    .main-logo {
+
+        .modal {
+
+            .modal-title p {
+                font-size: 44px;
+            }
+
+            .modal-body p {
+                font-size: 18px;
+            }
+
+            .modal-cards {
+                .card {
+                    .card-description {
+                        p {
+                            font-size: 14px;
+
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-logo {
+
+        .modal {
+
+            .modal-title p {
+                font-size: 40px;
+            }
+
+            .modal-body p {
+                font-size: 16px;
+            }
+
+            .modal-cards {
+                .card {
+                    .card-description {
+                        p {
+                            font-size: 13px;
+
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-logo {
+
+        .modal {
+            padding-bottom: 30px !important;
+
+            .modal-title p {
+                font-size: 36px;
+            }
+
+            .modal-body p {
+                font-size: 14px;
+            }
+
+            .modal-cards {
+                .card {
+                    .card-description {
+                        p {
+                            font-size: 12px;
+
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 @media (max-width: 740px) {
     .modal {
         max-width: 90%;
         margin: 0 auto;
-
         &-title {
-            .head-text-modal {
-                font-size: 32px;
-            }
-
             img {
                 transform: scale(0.5) !important;
             }
         }
+    }
+}
 
-        &-body {
-            p {
-                font-size: 13px !important;
+@media (max-width: 740px) {
+    .main-logo {
+
+        .modal {
+
+            .modal-title p {
+                font-size: 32px;
+            }
+
+            .modal-body p {
+                font-size: 12px;
+            }
+
+            .modal-cards {
+                .card {
+                    .card-description {
+                        p {
+                            font-size: 11px;
+
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -1439,29 +1551,72 @@ i.product-list-item-arrow-down {
     .modal {
         max-width: 90%;
         margin: 0 auto;
-
         &-title {
-
             margin-bottom: 15px !important;
             gap: 15px !important;
-
-            .head-text-modal {
-                font-size: 20px;
-            }
-
             img {
                 transform: scale(0.3) !important;
-            }
-        }
-
-        &-body {
-            p {
-                font-size: 10px !important;
             }
         }
     }
 }
 
+@media (max-width: 740px) {
+    .main-logo {
+        .modal {
+
+            .modal-title p {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .main-logo {
+
+        .modal {
+
+            .modal-title p {
+                font-size: 25px;
+            }
+
+            .modal-body p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .main-logo {
+
+        .modal {
+
+            .modal-title p {
+                font-size: 20px;
+            }
+
+            .modal-body p {
+                font-size: 10px;
+            }
+
+            .modal-cards {
+                .card {
+                    .card-description {
+                        p {
+                            font-size: 10px;
+
+                            span {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // grid-info-container 
 @media (max-width: 1300px) {
