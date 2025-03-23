@@ -2061,8 +2061,15 @@ i.product-list-item-arrow-down {
 
 @media (max-width: 980px) {
     .news-content {
+        
+        gap: 20px !important;
+        margin-bottom: 0 !important;
+
         .news-content-container {
             .news-header {
+
+                margin-bottom: 30px;
+
                 .header-text {
 
                     >p {
