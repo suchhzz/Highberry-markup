@@ -17,13 +17,6 @@ $(document).ready(function() {
         }, 1000);
     });
 
-
-    $('.grid-item').click(function(event) {
-        event.stopPropagation(); 
-        clearDescription();
-        $(this).find('.grid-item-description').addClass('active');
-    });
-
     $('.info-content').click(function() {
         clearSelectedBerrySlider();
         changeBerrySliderImage($(this).data('image'));
@@ -94,9 +87,6 @@ $(document).click(function(event) {
     clearDescription();
 });
 
-function clearDescription() {
-    $('.grid-item-description').removeClass('active');
-}
 
 function clearActiveTabs() {
     $('.accordion-content').removeClass('active');

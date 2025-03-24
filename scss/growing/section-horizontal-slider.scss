@@ -1,46 +1,45 @@
 .cultivation-page {
     .horizontal-slider {
         margin-bottom: 100px;
+
         .horizontal-slider-container {
-    
-            
-            @media (max-width: 1180px) {
-                height: 768px;
-            }
-    
+
             .image-section {
                 position: relative;
                 overflow: hidden;
+
                 .image-item {
                     position: absolute;
                     position: relative;
                     height: 619px;
                     width: 0%;
                     transition: width 0.3s ease-out;
-    
+
                     &.selected {
                         width: 100%;
                         transition: width 0.3s ease-out;
-    
+
                         .slider-arrows {
-                            i, p {
+
+                            i,
+                            p {
                                 opacity: 1;
                                 visibility: visible;
-    
+
                                 transition: visibility 0.2s ease-out, opacity 0.2s ease-out;
                             }
                         }
                     }
-    
+
                 }
-    
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     object-position: center;
                 }
-    
+
                 .slider-arrows {
                     position: absolute;
                     width: 100%;
@@ -48,58 +47,46 @@
                     height: 147px;
                     bottom: 0;
                     justify-content: space-between;
-                    
-                    @media (max-width: 1180px) {
-                        height: 78px;
-                    }
-                    
-                    i, p {
+
+                    i,
+                    p {
                         opacity: 0;
                         visibility: hidden;
                         transition: visibility 0.2s ease-out, opacity 0.2s ease-out;
                     }
-    
+
                     p {
                         font-family: 'Roboto-Light';
                         font-size: 40px;
                         color: white;
-    
-                        @media (max-width: 1180px) {
-                            font-size: 20px;
-                        }
                     }
-    
+
                     i {
                         width: 17px;
                         height: 30px;
-    
-                        
-                        @media (max-width: 1180px) {
-                            scale: 0.5;
-                        }
-    
+
                         &:hover {
                             cursor: pointer;
                         }
                     }
-    
+
                     i.next-arrow-icon {
                         background-image: url('../../images/growing/section-horizontal-slider/next-arrow.png');
                         margin-right: 77px;
                     }
-                    
+
                     i.prev-arrow-icon {
                         background-image: url('../../images/growing/section-horizontal-slider/prev-arrow.png');
                         margin-left: 77px;
                     }
                 }
             }
-    
+
             .image-content-section {
                 .ellipse-slider {
                     gap: 25px;
                     margin: 35px 0 55px 0;
-    
+
                     .slider-item {
                         .line {
                             background-image: url('../../images/growing/section-horizontal-slider/horizontal-line.png');
@@ -107,170 +94,889 @@
                             height: 1px;
                             transition: width 0.3s ease-out;
                         }
-    
+
                         &.selected {
-    
+
                             .line {
                                 width: 200px;
                                 transition: width 0.3s ease-out;
                             }
-    
+
                             .ellipse {
                                 background-image: url('../../images/growing/section-horizontal-slider/checked-ellipse.png');
                             }
                         }
-    
+
                         &:hover {
                             cursor: pointer;
                         }
                     }
                 }
             }
-    
+
             .image-content-description {
                 padding: 0 75px;
                 height: 200px;
                 overflow: hidden;
                 position: relative;
-    
-                
-                @media (max-width: 1180px) {
-                    height: 104px;
-                    margin: 0;
-                }
-    
+
                 .description-image-item {
                     justify-content: left;
                     overflow: hidden;
                     position: absolute;
-                    
-                    @media (max-width: 1180px) {
-                        align-items: start;
-                    }
-    
+
                     margin-top: 20%;
                     opacity: 0;
                     visibility: hidden;
-    
+
                     &.selected {
                         margin-top: 0;
                         opacity: 1;
                         visibility: visible;
                         transition: margin-top 0.3s ease-out, opacity 0.4s ease-out, visibility 0.4s ease-out;
                     }
-                
-    
-                .description-image-section {
-                    height: 200px;
-                    width: 300px;
-    
-                    
-                    @media (max-width: 1180px) {
-                        height: 107px;
-                        width: 160px;
-                    }
-    
-                    img {
-                        border-radius: 10px;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: center;
-                    }
-                }
-    
-                .description-section {
-                    margin-left: 60px;
-    
-                    
-                    @media (max-width: 1180px) {
-                        margin-left: 23px;
-                    }
-    
-                    .description-title {
-                        flex-direction: column;
-                        align-items: start;
-                        margin-bottom: 50px;
-                        gap: 15px;
-    
-                        
-                        @media (max-width: 1180px) {
-                            gap: 10px;
-                        }
-                        p {
-                            font-family: 'Roboto-Regular';
-                            font-size: 28px;
-                            color: #6AB354;
-    
-                            @media (max-width: 1180px) {
-                                font-size: 20px;
-                            }
-                            
-                        }
-    
+
+
+                    .description-image-section {
+                        height: 200px;
+                        width: 300px;
+
                         img {
-                            margin-left: 15px;
-    
-    
-                        }
-    
-                        
-                        @media (max-width: 1180px) {
-                            margin-bottom: 10px;
+                            border-radius: 10px;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
                         }
                     }
-    
-                .description-main {
-                    gap: 60px;
-                    
-                    @media (max-width: 1180px) {
-                        gap: 48px;
-                    }
-    
-                    .description-card {
-    
-                        gap: 25px;
-                        
-                        @media (max-width: 1180px) {
-                            gap: 20px;
-                        }
-    
-                        .card-image {
-                            
-                            @media (max-width: 1180px) {
-                                width: 42px;
-                                height: 42px;
-                            }
-                        }
-    
-                        .card-text {
+
+                    .description-section {
+                        margin-left: 60px;
+
+                        .description-title {
+                            flex-direction: column;
+                            align-items: start;
+                            margin-bottom: 50px;
+                            gap: 15px;
+
                             p {
                                 font-family: 'Roboto-Regular';
-                                font-size: 15px;
-                                color: black;
-                                line-height: 1.6;
-                                @media (max-width: 1180px) {
-                                    font-size: 11px;
-                                }
-    
-                                span {
-                                    font-family: 'Roboto-Regular';
-                                    font-weight: 600;
-                                    font-size: 24px;
-                                    color: black;
-                                    margin-right: 10px;
-    
-                                    
-                                    @media (max-width: 1180px) {
-                                        font-size: 18px;
-                                        margin-right: 4px;
+                                font-size: 28px;
+                                color: #6AB354;
+
+                            }
+
+                            img {
+                                margin-left: 15px;
+
+
+                            }
+                        }
+
+                        .description-main {
+                            gap: 60px;
+
+                            .description-card {
+
+                                gap: 25px;
+
+                                .card-text {
+                                    p {
+                                        font-family: 'Roboto-Regular';
+                                        font-size: 15px;
+                                        color: black;
+                                        line-height: 1.6;
+
+                                        span {
+                                            font-family: 'Roboto-Regular';
+                                            font-weight: 600;
+                                            font-size: 24px;
+                                            color: black;
+                                            margin-right: 10px;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }}
+                }
             }
+        }
+    }
+
+    @media (max-width: 1300px) {
+
+        .cultivation-info {
+            padding-top: 0;
+        }
+
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 500px;
+
+                        .slider-arrows {
+
+                            height: 120px;
+
+                            p {
+                                font-size: 34px;
+                            }
+
+                            i {
+                                transform: scale(0.9);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 20px;
+                        margin: 30px 0 50px 0;
+
+                        .slider-item {
+
+                            .ellipse {
+                                background-size: 100%;
+                                width: 16px;
+                                height: 16px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 170px;
+                                }
+
+                                .ellipse {
+                                    background-size: 100%;
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    .description-image-item {
+                        .description-section {
+                            .description-title {
+                                p {
+                                    font-size: 26px;
+                                    padding-bottom: 15px;
+                                    border-bottom: 1px solid #6AB354;
+                                }
+
+                                img {
+                                    display: none;
+                                }
+                            }
+
+                            .description-main {
+                                .description-card {
+                                    .card-text {
+                                        p {
+                                            font-size: 14px;
+
+                                            span {
+                                                font-size: 22px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .lower-section {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .cultivation-info {
+            padding-top: 60px;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 430px;
+
+                        .slider-arrows {
+
+                            height: 90px;
+
+                            p {
+                                font-size: 30px;
+                            }
+
+                            i {
+                                transform: scale(0.8);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 18px;
+                        margin: 25px 0 45px 0;
+
+                        .slider-item {
+
+                            .ellipse {
+                                width: 14px;
+                                height: 14px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 150px;
+                                }
+
+                                .ellipse {
+                                    width: 14px;
+                                    height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    box-sizing: border-box;
+                    max-width: 90%;
+                    padding: 0;
+                    height: 170px;
+                    .description-image-item {
+
+                        display: grid;
+                        grid-template-columns: 35% 65%;
+                        grid-template-rows: auto;
+                        box-sizing: border-box;
+                        gap: 30px;
+                        height: 100%;
+
+                        .description-image-section {
+                            height: 100%;
+                            overflow: hidden;
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .description-section {
+
+                            margin: 0;
+
+                            .description-title {
+                                p {
+                                    font-size: 24px;
+                                    padding-bottom: 14px;
+                                }
+                            }
+
+                            .description-main {
+                                gap: 40px;
+                                justify-content: flex-start;
+
+                                .description-card {
+                                    gap: 20px;
+                                    .card-image {
+                                        height: auto;
+                                        width: auto;
+                                        img {
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+                                    }
+
+                                    .card-text {
+                                        p {
+                                            font-size: 13px;
+
+                                            span {
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 850px) {
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 380px;
+
+                        .slider-arrows {
+                            height: 80px;
+
+                            p {
+                                font-size: 24px;
+                            }
+
+                            i {
+                                transform: scale(0.7);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 15px;
+                        margin: 20px 0 35px 0;
+
+                        .slider-item {
+
+                            .ellipse {
+                                width: 13px;
+                                height: 13px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 130px;
+                                }
+
+                                .ellipse {
+                                    width: 13px;
+                                    height: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    height: 140px;
+                    .description-image-item {
+                        gap: 25px;
+
+                        .description-section {
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            gap: 15px;
+
+                            .description-title {
+                                margin: 0;
+                                p {
+                                    font-size: 22px;
+                                    padding-bottom: 12px;
+                                }
+                            }
+
+                            .description-main {
+                                gap: 30px;
+                                justify-content: flex-start;
+
+                                .description-card {
+                                    gap: 20px;
+                                    .card-image {
+                                        img {
+                                            width: 45px;
+                                            height: 45px;
+                                        }
+                                    }
+
+                                    .card-text {
+                                        p {
+                                            font-size: 12px;
+
+                                            span {
+                                                font-size: 17px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        
+        .cultivation-info {
+            padding-top: 40px;
+        }
+
+        .horizontal-slider {
+
+            margin-bottom: 0;
+
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 330px;
+
+                        .slider-arrows {
+                            height: 78px;
+
+                            p {
+                                font-size: 20px;
+                            }
+
+                            i {
+                                transform: scale(0.6);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        margin: 20px 0 30px 0;
+
+                        .slider-item {
+
+                            .ellipse {
+                                width: 11px;
+                                height: 11px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 110px;
+                                }
+
+                                .ellipse {
+                                    width: 11px;
+                                    height: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    height: 140px;
+                    .description-image-item {
+                        gap: 25px;
+                        grid-template-columns: 35% 75%;
+
+                        .description-section {
+                            .description-title {
+                                margin: 0;
+                                p {
+                                    font-size: 20px;
+                                    padding-bottom: 10px;
+                                }
+                            }
+
+                            .description-main {
+                                gap: 25px;
+
+                                .description-card {
+                                    .card-image {
+                                        img {
+                                            width: 43px;
+                                            height: 43px;
+                                        }
+                                    }
+
+                                    .card-text {
+                                        p {
+                                            font-size: 11px;
+
+                                            span {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @media (max-width: 650px) {
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 260px;
+
+                        .slider-arrows {
+                            height: 60px;
+
+                            p {
+                                font-size: 17px;
+                            }
+
+                            i {
+                                transform: scale(0.5);
+
+                                &.next-arrow-icon {
+                                    margin-right: 20px !important;
+                                }
+
+                                &.prev-arrow-icon {
+                                    margin-left: 20px !important;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 12px;
+                        margin: 20px 0 30px 0;
+
+                        .slider-item {
+
+                            .ellipse {
+                                width: 9px;
+                                height: 9px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 105px;
+                                }
+
+                                .ellipse {
+                                    width: 9px;
+                                    height: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    height: 120px;
+                    .description-image-item {
+                        gap: 25px;
+                        grid-template-columns: 1fr;
+                        width: 100%;
+                        .description-image-section {
+                            display: none;
+                        }
+
+                        .description-section {
+                            width: 100%;
+                            .description-title {
+                                display: none;
+                            }
+
+                            .description-main {
+                                gap: 22px;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+
+                                .description-card {
+                                    gap: 17px;
+                                    .card-image {
+                                        img {
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+                                    }
+
+                                    .card-text {
+                                        p {
+                                            font-size: 13px;
+
+                                            span {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 220px;
+
+                        .slider-arrows {
+                            height: 50px;
+
+                            p {
+                                font-size: 13px;
+                            }
+
+                            i {
+                                transform: scale(0.4);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 10px;
+                        margin: 15px 0 30px 0;
+
+                        .slider-item {
+
+                            .ellipse {
+                                width: 7px;
+                                height: 7px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 70px;
+                                }
+
+                                .ellipse {
+                                    width: 7px;
+                                    height: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    height: 130px;
+                    .description-image-item {
+                        .description-section {
+                            .description-main {
+                                .description-card {
+                                    .card-image {
+                                        img {
+                                            width: 45px;
+                                            height: 45px;
+                                        }
+                                    }
+                                    .card-text {
+                                        p {
+                                            font-size: 12px;
+
+                                            span {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 400px) {
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 180px;
+
+                        .slider-arrows {
+                            height: 40px;
+
+                            p {
+                                font-size: 11px;
+                            }
+
+                            i {
+                                transform: scale(0.3);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 8px;
+
+                        .slider-item {
+                            .ellipse {
+                                width: 5px;
+                                height: 5px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 50px;
+                                }
+
+                                .ellipse {
+                                    width: 5px;
+                                    height: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    .description-image-item {
+                        .description-section {
+                            .description-main {
+                                .description-card {
+
+                                    gap: 13px;
+
+                                    .card-image {
+                                        img {
+                                            width: 35px;
+                                            height: 35px;
+                                        }
+                                    }
+                                    .card-text {
+                                        p {
+                                            font-size: 11px;
+
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 350px) {
+        .horizontal-slider {
+            .horizontal-slider-container {
+
+                .image-section {
+                    .image-item {
+                        height: 130px;
+
+                        .slider-arrows {
+                            height: 35px;
+
+                            p {
+                                font-size: 10px;
+                            }
+
+                            i {
+                                transform: scale(0.2);
+                            }
+                        }
+
+                    }
+                }
+
+                .image-content-section {
+                    .ellipse-slider {
+                        gap: 5px;
+
+                        .slider-item {
+                            .ellipse {
+                                width: 4px;
+                                height: 4px;
+                            }
+
+                            &.selected {
+
+                                .line {
+                                    width: 38px;
+                                }
+
+                                .ellipse {
+                                    width: 4px;
+                                    height: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-content-description {
+                    .description-image-item {
+                        .description-section {
+                            .description-main {
+                                .description-card {
+
+                                    gap: 10px;
+
+                                    .card-image {
+                                        img {
+                                            width: 30px;
+                                            height: 30px;
+                                        }
+                                    }
+                                    .card-text {
+                                        p {
+                                            font-size: 10px;
+
+                                            span {
+                                                font-size: 12px;
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

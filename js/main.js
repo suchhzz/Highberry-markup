@@ -23,7 +23,17 @@ $(document).ready(function() {
         $('#' + menuItemDescription).toggleClass('active');
 
     });
+
+    $('.cultivation .grid-item').click(function(event) {
+        event.stopPropagation(); 
+        clearDescription();
+        $(this).find('.grid-item-description').addClass('active');
+    });
 }); 
+
+function clearDescription() {
+    $('.grid-item-description').removeClass('active');
+}
 
 function showMenuItem() {
     let items = $('.menu-item');
