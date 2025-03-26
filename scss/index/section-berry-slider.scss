@@ -137,4 +137,148 @@
             }
         }
     }
+
+    @media (max-width: 1300px) {
+        .berry-slider {
+            .berry-slider-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+
+                .image-info {
+                    padding: 0 50px;
+                    box-sizing: border-box;
+
+                    .image-info-header {
+                        .head-text {
+                            font-size: 44px;
+                        }
+                    }
+
+                    .info-content {
+                        .info-content-icon {}
+
+                        .info-content-main {
+                            .info-content-title {
+                                p {
+                                    font-size: 26px;
+                                }
+                            }
+
+                            .info-content-description {
+                                p {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-slider {
+                    .image-item {
+                        &.first {
+                            height: 100%;
+                            z-index: 5;
+                            margin-right: 140px;
+                        }
+
+                        &.second {
+                            height: 90%;
+                            z-index: 4;
+                            margin-right: 105px;
+                        }
+
+                        &.third {
+                            height: 80%;
+                            z-index: 3;
+                            margin-right: 70px;
+                        }
+
+                        &.fourth {
+                            height: 70%;
+                            z-index: 2;
+                            margin-right: 35px;
+                        }
+
+                        &.fifth {
+                            height: 60%;
+                            z-index: 1;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .berry-slider {
+            .berry-slider-container {
+
+                grid-template-columns: 65% 45%;
+
+                .image-info {
+                    padding: 0 30px;
+
+                    .image-info-header {
+                        .head-text {
+                            font-size: 40px;
+                        }
+                    }
+
+                    .info-content {
+                        .info-content-icon {}
+
+                        .info-content-main {
+                            .info-content-title {
+                                p {
+                                    font-size: 24px;
+                                }
+                            }
+
+                            .info-content-description {
+                                p {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-slider {
+                    .image-item {
+                        &.first {
+                            height: 100%;
+                            z-index: 5;
+                            margin-right: 140px;
+                        }
+
+                        &.second {
+                            height: 90%;
+                            z-index: 4;
+                            margin-right: 105px;
+                        }
+
+                        &.third {
+                            height: 80%;
+                            z-index: 3;
+                            margin-right: 70px;
+                        }
+
+                        &.fourth {
+                            height: 70%;
+                            z-index: 2;
+                            margin-right: 35px;
+                        }
+
+                        &.fifth {
+                            height: 60%;
+                            z-index: 1;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

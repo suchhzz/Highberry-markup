@@ -1,8 +1,8 @@
 .main-page {
+
     .product-info,
     .cultivation-info,
-    .production-info
-     {
+    .production-info {
         gap: 55px !important;
         margin-bottom: 68px !important;
     }
@@ -15,32 +15,29 @@
             margin-top: 70px;
             margin-bottom: 50px;
         }
+    }
 
+    .delivery-description,
+    .cultivation-description {
+        grid-template-columns: repeat(2, 1fr) !important;
+        max-width: 1000px !important;
+        margin: 0 auto !important;
+        margin-top: 75px !important;
+        gap: 65px !important;
 
-        .delivery {
-            .delivery-description {
-                grid-template-columns: repeat(2, 1fr);
-                max-width: 1000px;
-                margin: 0 auto;
-                margin-top: 75px;
-                gap: 65px;
-
-                .description-text {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
+        .description-text {
+            height: 100%;
+            width: 100%;
         }
     }
 
     @media (max-width: 1080px) {
-
-
         .product-info,
         .cultivation-info,
         .production-info {
             display: grid !important;
             grid-template-columns: repeat(3, 212px) !important;
+            justify-content: center !important;
             margin: 0 27px !important;
         }
 
@@ -65,21 +62,26 @@
                         object-fit: contain;
                     }
                 }
-
-                .delivery-description {
-                    margin-top: 61px;
-                }
             }
+        }
+
+        .cultivation-description {
+            margin: 0 30px !important;
+        }
+
+        .delivery-description,
+        .cultivation-description {
+            margin-top: 61px !important;
         }
     }
 
     @media (max-width: 870px) {
-        .delivery-map {
-            .delivery-description {
-                .description-text {
-                    p {
-                        font-size: 14px;
-                    }
+
+        .delivery-description,
+        .cultivation-description {
+            .description-text {
+                p {
+                    font-size: 14px !important;
                 }
             }
         }
@@ -90,7 +92,7 @@
         .product-info,
         .cultivation-info,
         .production-info {
-            grid-template-columns: 1fr !important ;
+            grid-template-columns: 1fr !important;
             justify-items: center !important;
             margin: 0 27px !important;
             gap: 20px !important;
@@ -106,12 +108,15 @@
     }
 
     @media (max-width: 700px) {
-        .delivery-map {
-            .delivery {
-                .delivery-description {
-                    grid-template-columns: 1fr;
-                    margin-top: 31px;
-                    gap: 0;
+
+        .delivery-description,
+        .cultivation-description {
+            grid-template-columns: 1fr !important;
+            margin-top: 31px !important;
+            gap: 0 !important;
+
+            .delivery-map {
+                .delivery {
 
                     .description-text {
                         height: 100%;
