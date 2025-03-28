@@ -57,6 +57,10 @@ function changeBerryListImage(item) {
     }, 300);
 }
 
+function changeBerryListImageMobile(item) {
+    
+}
+
 $(window).scroll(function() {
     let scrollPosition = $(window).scrollTop();
     
