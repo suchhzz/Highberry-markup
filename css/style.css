@@ -1934,6 +1934,7 @@ i.product-list-item-arrow-down:hover {
 }
 @media (max-width: 600px) {
   .cultivation .container .image-info {
+    margin: 0 55px;
     row-gap: 45px;
   }
   .cultivation .container .image-info .grid-item .grid-item-description {
@@ -1952,6 +1953,7 @@ i.product-list-item-arrow-down:hover {
 }
 @media (max-width: 450px) {
   .cultivation .container .image-info {
+    margin: 0 45px;
     row-gap: 35px;
   }
   .cultivation .container .image-info .grid-item .grid-item-description {
@@ -3097,7 +3099,58 @@ header.transparent-background.dark-background {
     font-size: 10px !important;
   }
 }
+.article-page .main-logo-text {
+  background-image: url("../../images/article/main-logo-background.png");
+}
 
+.events-page .main-logo .main-logo-image {
+  background-image: url("../../images/vacancies/main-logo-background.png");
+}
+.events-page .main-logo .main-logo-empty {
+  height: 250px;
+}
+.events-page .main-logo .modal {
+  height: 224px;
+}
+@media (max-width: 1300px) {
+  .events-page .main-logo .modal {
+    transform: translate(-50%, -10%);
+  }
+  .events-page .main-logo .main-logo-empty {
+    height: 150px;
+  }
+}
+@media (max-width: 1180px) {
+  .events-page .main-logo .modal {
+    transform: translate(-50%, -10%);
+  }
+  .events-page .main-logo .main-logo-empty {
+    height: 180px;
+  }
+}
+@media (max-width: 740px) {
+  .events-page .main-logo .modal {
+    transform: translate(-50%, 0%);
+  }
+  .events-page .main-logo .main-logo-empty {
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .events-page .main-logo .modal {
+    transform: translate(-50%, 10%);
+  }
+}
+@media (max-width: 450px) {
+  .events-page .main-logo .modal {
+    transform: translate(-50%, 20%);
+  }
+}
+@media (max-width: 350px) {
+  .events-page .main-logo .modal {
+    transform: translate(-50%, 30%);
+  }
+}
 .contacts-page .main-logo-text {
   background-image: url("../../images/contacts/main-logo-background.png");
   margin: 0;
@@ -3482,57 +3535,6 @@ header.transparent-background.dark-background {
   }
   .contacts-page section .card-container .contacts-section .contact-form .contact-form-container {
     padding: 20px 15px;
-  }
-}
-.article-page .main-logo-text {
-  background-image: url("../../images/article/main-logo-background.png");
-}
-.events-page .main-logo .main-logo-image {
-  background-image: url("../../images/vacancies/main-logo-background.png");
-}
-.events-page .main-logo .main-logo-empty {
-  height: 250px;
-}
-.events-page .main-logo .modal {
-  height: 224px;
-}
-@media (max-width: 1300px) {
-  .events-page .main-logo .modal {
-    transform: translate(-50%, -10%);
-  }
-  .events-page .main-logo .main-logo-empty {
-    height: 150px;
-  }
-}
-@media (max-width: 1180px) {
-  .events-page .main-logo .modal {
-    transform: translate(-50%, -10%);
-  }
-  .events-page .main-logo .main-logo-empty {
-    height: 180px;
-  }
-}
-@media (max-width: 740px) {
-  .events-page .main-logo .modal {
-    transform: translate(-50%, 0%);
-  }
-  .events-page .main-logo .main-logo-empty {
-    height: 150px;
-  }
-}
-@media (max-width: 600px) {
-  .events-page .main-logo .modal {
-    transform: translate(-50%, 10%);
-  }
-}
-@media (max-width: 450px) {
-  .events-page .main-logo .modal {
-    transform: translate(-50%, 20%);
-  }
-}
-@media (max-width: 350px) {
-  .events-page .main-logo .modal {
-    transform: translate(-50%, 30%);
   }
 }
 .gallery-page .main-logo .main-logo-image {
@@ -5205,6 +5207,9 @@ header.transparent-background.dark-background {
     font-size: 11x;
   }
 }
+.news-page .main-logo-text {
+  background-image: url("../../images/news/main-logo-background.png");
+}
 .privacy-page .main-logo-text {
   background-image: url("../../images/privacy-policy/main-logo-background.png");
   margin-bottom: 16px;
@@ -5667,9 +5672,6 @@ header.transparent-background.dark-background {
     transform: scale(0.5) !important;
   }
 }
-.news-page .main-logo-text {
-  background-image: url("../../images/news/main-logo-background.png");
-}
 .production-page .freezing-info .freezing-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -5899,6 +5901,63 @@ header.transparent-background.dark-background {
   }
   .production-page .modal {
     transform: translate(-50%, -35%) !important;
+  }
+}
+.useful-page .main-logo .main-logo-image {
+  background-image: url("../../images/useful/main-logo-background.png");
+}
+.useful-page .main-logo .main-logo-empty {
+  height: 250px;
+}
+.useful-page .main-logo .modal {
+  height: 224px;
+}
+@media (max-width: 1250px) {
+  .useful-page .main-logo .main-logo-empty {
+    height: 180px;
+  }
+  .useful-page .main-logo .modal {
+    transform: translate(-50%, -15%);
+  }
+}
+@media (max-width: 1100px) {
+  .useful-page .main-logo .main-logo-empty {
+    height: 150px;
+  }
+  .useful-page .main-logo .modal {
+    transform: translate(-50%, -10%);
+  }
+}
+@media (max-width: 740px) {
+  .useful-page .main-logo .main-logo-empty {
+    height: 150px;
+  }
+  .useful-page .main-logo .modal {
+    transform: translate(-50%, -5%);
+  }
+}
+@media (max-width: 600px) {
+  .useful-page .main-logo .main-logo-empty {
+    height: 130px;
+  }
+  .useful-page .main-logo .modal {
+    transform: translate(-50%, 10%);
+  }
+}
+@media (max-width: 450px) {
+  .useful-page .main-logo .main-logo-empty {
+    height: 130px;
+  }
+  .useful-page .main-logo .modal {
+    transform: translate(-50%, 15%);
+  }
+}
+@media (max-width: 450px) {
+  .useful-page .main-logo .main-logo-empty {
+    height: 100px;
+  }
+  .useful-page .main-logo .modal {
+    transform: translate(-50%, 20%);
   }
 }
 .vacancies-page .main-logo .main-logo-image {
@@ -6365,63 +6424,6 @@ header.transparent-background.dark-background {
     height: 150px;
   }
   .vacancies-page .main-logo .modal {
-    transform: translate(-50%, 20%);
-  }
-}
-.useful-page .main-logo .main-logo-image {
-  background-image: url("../../images/useful/main-logo-background.png");
-}
-.useful-page .main-logo .main-logo-empty {
-  height: 250px;
-}
-.useful-page .main-logo .modal {
-  height: 224px;
-}
-@media (max-width: 1250px) {
-  .useful-page .main-logo .main-logo-empty {
-    height: 180px;
-  }
-  .useful-page .main-logo .modal {
-    transform: translate(-50%, -15%);
-  }
-}
-@media (max-width: 1100px) {
-  .useful-page .main-logo .main-logo-empty {
-    height: 150px;
-  }
-  .useful-page .main-logo .modal {
-    transform: translate(-50%, -10%);
-  }
-}
-@media (max-width: 740px) {
-  .useful-page .main-logo .main-logo-empty {
-    height: 150px;
-  }
-  .useful-page .main-logo .modal {
-    transform: translate(-50%, -5%);
-  }
-}
-@media (max-width: 600px) {
-  .useful-page .main-logo .main-logo-empty {
-    height: 130px;
-  }
-  .useful-page .main-logo .modal {
-    transform: translate(-50%, 10%);
-  }
-}
-@media (max-width: 450px) {
-  .useful-page .main-logo .main-logo-empty {
-    height: 130px;
-  }
-  .useful-page .main-logo .modal {
-    transform: translate(-50%, 15%);
-  }
-}
-@media (max-width: 450px) {
-  .useful-page .main-logo .main-logo-empty {
-    height: 100px;
-  }
-  .useful-page .main-logo .modal {
     transform: translate(-50%, 20%);
   }
 }
