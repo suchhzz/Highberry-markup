@@ -989,6 +989,28 @@ i.arrow-slider-bar {
     }
 }
 
+.main-page {
+    .cultivation {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-page {
+        .cultivation {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main-page {
+        .cultivation {
+            padding-bottom: 35px;
+        }
+    }
+}
+
 .cultivation {
     .container {
 
@@ -1427,6 +1449,7 @@ i.product-list-item-arrow-down {
                             .accordion-title {
                                 font-size: 20px;
                             }
+
                             .accordion-content {
                                 font-size: 12px;
 
@@ -1444,9 +1467,10 @@ i.product-list-item-arrow-down {
 
 @media (max-width: 845px) {
     .berry-list-info {
-        margin-bottom: 40px;
 
+        margin: 0 !important;
         .berry-container {
+            padding-bottom: 20px;
             grid-template-columns: 1fr;
             grid-template-rows: 400px auto;
 
@@ -1607,6 +1631,7 @@ i.product-list-item-arrow-down {
         }
     }
 }
+
 // head-text 
 
 @media (max-width: 1100px) {
@@ -2577,7 +2602,7 @@ i.product-list-item-arrow-down {
             }
 
             .cultivation-info {
-                margin: 20px 27px 40px 27px;
+                margin: 20px 27px 40px 27px !important;
                 display: grid;
                 grid-template-columns: repeat(3, 212px);
             }
@@ -2628,7 +2653,9 @@ i.product-list-item-arrow-down {
                 }
             }
 
-            .cultivation-description {}
+            .cultivation-description {
+                margin-top: 55px !important;
+            }
         }
     }
 }
@@ -2639,9 +2666,8 @@ i.product-list-item-arrow-down {
         background-color: #fff;
 
         .container {
-            padding-top: 30px;
-            margin-top: 40px;
-
+            margin: 0 !important;
+            padding-top: 50px;
             .head {
                 .head-text {
                     margin-bottom: 0 !important;
@@ -2649,7 +2675,7 @@ i.product-list-item-arrow-down {
             }
 
             .cultivation-info {
-                margin: 20px 27px 40px 27px;
+                margin: 20px 27px !important;
                 display: grid;
                 grid-template-columns: repeat(3, 212px);
             }
@@ -2718,6 +2744,11 @@ i.product-list-item-arrow-down {
                     }
                 }
             }
+
+            .cultivation-description {
+                margin-top: 0px !important;
+                padding-top: 0px !important;
+            }
         }
     }
 }
@@ -2727,6 +2758,7 @@ i.product-list-item-arrow-down {
         .container {
             .image-info {
                 row-gap: 45px;
+
                 .grid-item {
                     .grid-item-description {
                         min-height: 30px;
@@ -2779,6 +2811,7 @@ i.product-list-item-arrow-down {
         }
     }
 }
+
 // product card
 
 @media (max-width: 1450px) {
@@ -2969,6 +3002,28 @@ i.product-list-item-arrow-down {
         .card-body {
             padding: 0 20px;
             grid-template-columns: 1fr;
+        }
+    }
+}
+
+// video preview
+
+@media (max-width: 1300px) {
+    .video-preview {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-preview {
+
+        margin-bottom: 25px;
+
+        .video-preview-main {
+            background-color: #1A171B;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
         }
     }
 }
