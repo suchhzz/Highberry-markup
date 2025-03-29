@@ -22,12 +22,19 @@ $(document).ready(function() {
         changeBerrySliderImage($(this).data('image'));
 
         $(this).addClass('selected');
+
+        let imageIndex = $(this).index();
+
+        $('.image-description-mobile .description-item').eq(imageIndex - 1).addClass('selected');
+        $('.mobile-image-title .image-title-item').eq(imageIndex - 1).addClass('selected');
     });
 
 })
 
 function clearSelectedBerrySlider() {
     $('.info-content').removeClass('selected');
+    $('.image-description-mobile .description-item').removeClass('selected');
+    $('.mobile-image-title .image-title-item').removeClass('selected');
 }
 
 const images = ['berriesFruits', 'wildBerries', 'puree', 'vegetables', 'mixture'];
