@@ -8,8 +8,7 @@
                         .accordion-icon {
                             .line {
                                 &.highlight {
-                                    max-height: 135px;
-                                    height: 135px;
+                                    max-height: 170px;
                                 }
                             }
                         }
@@ -17,7 +16,7 @@
                         .accordion-section {
                             .accordion-content {
                                 &.active {
-                                    max-height: 120px;
+                                    max-height: 170px;
                                     opacity: 1;
                                 }
                             }

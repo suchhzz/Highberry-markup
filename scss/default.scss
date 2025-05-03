@@ -425,13 +425,14 @@ i.menu-item-arrow-down {
                 .accordion {
                     gap: 40px;
                     margin-bottom: 10px;
+                    align-items: flex-start;
 
 
                     .accordion-icon {
                         flex-direction: column;
                         align-self: flex-start;
                         margin-top: 10px;
-                        max-height: 218px;
+                        // max-height: 218px;
                         height: 100%;
                         width: 17px;
 
@@ -451,11 +452,6 @@ i.menu-item-arrow-down {
                             bottom: 0;
                             // left: 50%;
                             transition: max-height 0.3s linear;
-
-                            &.highlight {
-                                max-height: 190px;
-                                height: 190px;
-                            }
                         }
                     }
 
@@ -488,14 +484,15 @@ i.menu-item-arrow-down {
                             font-size: 16px;
                             color: black;
                             line-height: 1.6;
-                            transition: max-height 0.3s linear;
+                            
+                            transition: max-height .3s linear;
 
                             a {
                                 margin: 20px 0 30px 0;
                             }
 
                             &.active {
-                                max-height: 175px;
+                                // max-height: 175px;
                                 opacity: 1;
                             }
                         }
@@ -1330,323 +1327,323 @@ i.product-list-item-arrow-down {
 
 // berry list info 
 
-@media (max-width: 1300px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .berry-list-title {
-                        .head-text {
-                            font-size: 36px;
-                        }
-                    }
+// @media (max-width: 1300px) {
+//     .berry-list-info {
+//         .berry-container {
+//             .berry-list {
+//                 .berry-list-container {
+//                     .berry-list-title {
+//                         .head-text {
+//                             font-size: 36px;
+//                         }
+//                     }
 
-                    .accordion {
+//                     .accordion {
 
-                        .accordion-icon {
-                            margin-top: 5px;
-                        }
+//                         .accordion-icon {
+//                             margin-top: 5px;
+//                         }
 
-                        .accordion-section {
+//                         .accordion-section {
 
-                            .accordion-title {
-                                font-size: 26px;
-                            }
+//                             .accordion-title {
+//                                 font-size: 26px;
+//                             }
 
-                            .accordion-content {
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                             .accordion-content {
+//                                 font-size: 15px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 1100px) {
-    .berry-list-info {
+// @media (max-width: 1100px) {
+//     .berry-list-info {
 
-        margin-bottom: 50px;
+//         margin-bottom: 50px;
 
-        .berry-container {
-            grid-template-columns: 60% 40%;
-            grid-template-rows: 700px;
-            height: 100%;
-            overflow: hidden;
+//         .berry-container {
+//             grid-template-columns: 60% 40%;
+//             grid-template-rows: 700px;
+//             height: 100%;
+//             overflow: hidden;
 
-            .image-section {
+//             .image-section {
 
-                height: 100%;
-                width: 100%;
+//                 height: 100%;
+//                 width: 100%;
 
-                .berry-list-image-container {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
+//                 .berry-list-image-container {
+//                     height: 100%;
+//                     width: 100%;
+//                 }
+//             }
 
-            .berry-list {
-                height: 100%;
+//             .berry-list {
+//                 height: 100%;
 
-                .berry-list-container {
+//                 .berry-list-container {
 
-                    margin-left: 32px;
+//                     margin-left: 32px;
 
-                    .berry-list-title {
+//                     .berry-list-title {
 
-                        margin-bottom: 10px;
+//                         margin-bottom: 10px;
 
-                        .head-text {
-                            font-size: 38px;
-                        }
-                    }
+//                         .head-text {
+//                             font-size: 38px;
+//                         }
+//                     }
 
-                    .accordion {
+//                     .accordion {
 
-                        margin-bottom: 8px;
+//                         margin-bottom: 8px;
 
-                        .accordion-icon {
-                            margin-top: 5px;
+//                         .accordion-icon {
+//                             margin-top: 5px;
 
-                            .ellipse {
-                                width: 15px;
-                                height: 15px;
-                                background-size: 100%;
-                            }
+//                             .ellipse {
+//                                 width: 15px;
+//                                 height: 15px;
+//                                 background-size: 100%;
+//                             }
 
-                            .line {
-                                height: 125px !important;
-                            }
-                        }
+//                             .line {
+//                                 height: 125px !important;
+//                             }
+//                         }
 
-                        .accordion-section {
+//                         .accordion-section {
 
-                            .accordion-title {
-                                font-size: 22px;
-                            }
+//                             .accordion-title {
+//                                 font-size: 22px;
+//                             }
 
-                            .accordion-content {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                             .accordion-content {
+//                                 font-size: 14px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 950px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .berry-list-title {
-                        .head-text {
-                            font-size: 30px;
-                        }
-                    }
+// @media (max-width: 950px) {
+//     .berry-list-info {
+//         .berry-container {
+//             .berry-list {
+//                 .berry-list-container {
+//                     .berry-list-title {
+//                         .head-text {
+//                             font-size: 30px;
+//                         }
+//                     }
 
-                    .accordion {
+//                     .accordion {
 
-                        .accordion-icon {
-                            .ellipse {
-                                width: 14px;
-                                height: 14px;
-                            }
+//                         .accordion-icon {
+//                             .ellipse {
+//                                 width: 14px;
+//                                 height: 14px;
+//                             }
 
-                            .line {
-                                height: 135px !important;
-                            }
-                        }
+//                             .line {
+//                                 height: 135px !important;
+//                             }
+//                         }
 
-                        .accordion-section {
-                            .accordion-title {
-                                font-size: 20px;
-                            }
+//                         .accordion-section {
+//                             .accordion-title {
+//                                 font-size: 20px;
+//                             }
 
-                            .accordion-content {
-                                font-size: 12px;
+//                             .accordion-content {
+//                                 font-size: 12px;
 
-                                a.link-more-info {
-                                    margin: 5px 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                                 a.link-more-info {
+//                                     margin: 5px 0;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 845px) {
-    .berry-list-info {
+// @media (max-width: 845px) {
+//     .berry-list-info {
 
-        margin: 0 !important;
-        .berry-container {
-            padding-bottom: 20px;
-            grid-template-columns: 1fr;
-            grid-template-rows: 400px auto;
+//         margin: 0 !important;
+//         .berry-container {
+//             padding-bottom: 20px;
+//             grid-template-columns: 1fr;
+//             grid-template-rows: 400px auto;
 
-            .berry-list {
+//             .berry-list {
 
-                height: 100%;
+//                 height: 100%;
 
-                .berry-list-container {
+//                 .berry-list-container {
 
-                    .berry-list-title {
-                        .head-text {
-                            font-size: 28px;
-                        }
-                    }
+//                     .berry-list-title {
+//                         .head-text {
+//                             font-size: 28px;
+//                         }
+//                     }
 
-                    margin-left: 30px;
+//                     margin-left: 30px;
 
-                    .accordion {
-                        .accordion-icon {
-                            .ellipse {
-                                width: 13px;
-                                height: 13px;
-                            }
+//                     .accordion {
+//                         .accordion-icon {
+//                             .ellipse {
+//                                 width: 13px;
+//                                 height: 13px;
+//                             }
 
-                            .line {
-                                height: 115px !important;
-                            }
-                        }
+//                             .line {
+//                                 height: 115px !important;
+//                             }
+//                         }
 
-                        .accordion-icon {
-                            margin-top: 3px;
-                        }
+//                         .accordion-icon {
+//                             margin-top: 3px;
+//                         }
 
-                        .accordion-section {
+//                         .accordion-section {
 
-                            .accordion-title {
-                                height: 30px;
-                            }
+//                             .accordion-title {
+//                                 height: 30px;
+//                             }
 
-                            .accordion-content {
-                                font-size: 12px;
+//                             .accordion-content {
+//                                 font-size: 12px;
 
-                                a.link-more-info {
-                                    margin: 25px 0;
-                                }
+//                                 a.link-more-info {
+//                                     margin: 25px 0;
+//                                 }
 
-                                &.active {
-                                    max-height: 110px !important;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                                 &.active {
+//                                     max-height: 110px !important;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 750px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .berry-list-title {
-                        .head-text {
-                            font-size: 26px;
-                        }
-                    }
+// @media (max-width: 750px) {
+//     .berry-list-info {
+//         .berry-container {
+//             .berry-list {
+//                 .berry-list-container {
+//                     .berry-list-title {
+//                         .head-text {
+//                             font-size: 26px;
+//                         }
+//                     }
 
-                    .accordion {
+//                     .accordion {
 
-                        .accordion-icon {
+//                         .accordion-icon {
 
-                            margin-top: 7px;
+//                             margin-top: 7px;
 
-                            .ellipse {
-                                width: 12px;
-                                height: 12px;
-                            }
+//                             .ellipse {
+//                                 width: 12px;
+//                                 height: 12px;
+//                             }
 
-                            .line {
-                                height: 115px !important;
-                            }
-                        }
+//                             .line {
+//                                 height: 115px !important;
+//                             }
+//                         }
 
-                        .accordion-section {
-                            .accordion-content {
-                                font-size: 11px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         .accordion-section {
+//                             .accordion-content {
+//                                 font-size: 11px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 620px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .accordion {
-                        .accordion-section {
-                            .accordion-content {
-                                a.link-more-info {
-                                    margin: 25px 0 10px 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 620px) {
+//     .berry-list-info {
+//         .berry-container {
+//             .berry-list {
+//                 .berry-list-container {
+//                     .accordion {
+//                         .accordion-section {
+//                             .accordion-content {
+//                                 a.link-more-info {
+//                                     margin: 25px 0 10px 0;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 440px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .accordion {
-                        .accordion-section {
-                            .accordion-content {
-                                a.link-more-info {
-                                    margin: 10px 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 440px) {
+//     .berry-list-info {
+//         .berry-container {
+//             .berry-list {
+//                 .berry-list-container {
+//                     .accordion {
+//                         .accordion-section {
+//                             .accordion-content {
+//                                 a.link-more-info {
+//                                     margin: 10px 0;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 400px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .berry-list-title {
-                        .head-text {
-                            font-size: 24px;
-                        }
-                    }
+// @media (max-width: 400px) {
+//     .berry-list-info {
+//         .berry-container {
+//             .berry-list {
+//                 .berry-list-container {
+//                     .berry-list-title {
+//                         .head-text {
+//                             font-size: 24px;
+//                         }
+//                     }
 
-                    .accordion {
-                        .accordion-section {
-                            .accordion-content {
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                     .accordion {
+//                         .accordion-section {
+//                             .accordion-content {
+//                                 font-size: 10px;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // head-text 
 
