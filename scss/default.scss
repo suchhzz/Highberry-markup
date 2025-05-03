@@ -330,14 +330,20 @@ i.menu-item-arrow-down {
 
 .ellipse {
     display: block;
-    background-image: url('../images/section/berry-list-info/ellipse.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 17px;
+    // background-image: url('../images/section/berry-list-info/ellipse.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+    border-radius: 50%;
+    border: 1px solid #6AB354;
+
+    width: 15px;
+    height: 15px;
 
     &.highlight {
-        background-image: url('../images/section/berry-list-info/checked-ellipse.png');
+        // background-image: url('../images/section/berry-list-info/checked-ellipse.png');
+        background-color: #6AB354;
+        transition: background-color .5s ease-out;
     }
 
     &:hover {
@@ -346,10 +352,20 @@ i.menu-item-arrow-down {
 }
 
 .line {
-    width: 1px;
-    background-image: url('../images/section/berry-list-info/ellipse-active-line.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    // border-left: 1px solid #6AB354;
+    position: relative;
+    // flex-grow: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #6AB354;
+        height: 100%;
+        width: 1px;
+    }
 }
 
 .berry-list-info {
@@ -433,7 +449,7 @@ i.menu-item-arrow-down {
                             max-height: 0;
                             height: 100%;
                             bottom: 0;
-                            left: 50%;
+                            // left: 50%;
                             transition: max-height 0.3s linear;
 
                             &.highlight {
