@@ -19,8 +19,24 @@
                 .content {
                     .content-title {
                         flex-direction: column;
-                        gap: 12px;
                         margin-bottom: 20px;
+                        padding-bottom: 12px;
+                        position: relative;
+
+                        >img {
+                            display: none;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 50%;
+                            height: 1px;
+                            background-color: #6AB354;
+                            left: 50%;
+                            bottom: 0;
+                            transform: translateX(-50%);
+                        }
 
                         p {
                             font-family: 'Roboto-Light';

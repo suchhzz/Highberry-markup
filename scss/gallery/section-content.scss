@@ -23,6 +23,12 @@
         .gallery-slider {
             flex-direction: column;
 
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
             .ellipse-slider {
                 margin: 35px 0;
                 gap: 28px;

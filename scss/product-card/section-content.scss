@@ -78,8 +78,11 @@
 
                 .text-section {
                     flex-direction: column;
-                    gap: 40px;
                     align-items: flex-start;
+
+                    >img {
+                        display: none;
+                    }
 
                     p.title-text {
                         font-family: 'Roboto-Light';
@@ -96,6 +99,9 @@
                     .text-content {
                         line-height: 25px;
                         max-width: 502px;
+                        padding-bottom: 40px;
+                        margin-bottom: 40px;
+                        border-bottom: 1px solid #6AB354;
 
                     }
 
@@ -258,12 +264,12 @@
 
         .text-section {
 
-            gap: 30px !important;
-
             .text-content {
 
                 padding-bottom: 30px;
                 border-bottom: 1px solid #6AB354;
+                
+                margin-bottom: 30px;
 
                 .title-text {
                     font-size: 26px !important;
@@ -413,6 +419,10 @@
 
         .text-section {
             .text-content {
+
+                padding-bottom: 25px !important;
+                margin-bottom: 25px !important;
+
                 .title-text {
                     font-size: 23px !important;
                 }
@@ -595,6 +605,10 @@
 
         .text-section {
             .text-content {
+
+                margin-bottom: 15px !important;
+                padding-bottom: 15px !important;
+
                 .title-text {
                     font-size: 20px !important;
                 }

@@ -72,8 +72,25 @@
 
                     .form-title {
                         flex-direction: column;
-                        gap: 20px;
                         width: 100%;
+                        position: relative;
+
+                        padding-bottom: 20px;
+
+                        >img {
+                            display: none;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 70%;
+                            height: 1px;
+                            background-color: #6AB354;
+                            left: 50%;
+                            bottom: 0;
+                            transform: translateX(-50%);
+                        }
 
                         p {
                             align-self: flex-start;

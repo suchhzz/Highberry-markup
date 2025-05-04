@@ -61,7 +61,11 @@ header {
     
             .language-choose {
 
-                gap: 20px;
+                // gap: 20px;
+
+                >img {
+                    display: none;
+                }
 
                 p {
                     font-family: 'Roboto-Regular';
@@ -70,6 +74,13 @@ header {
 
                     &:hover {
                         cursor: pointer;
+                    }
+
+                    padding-right: 20px;
+                    border-right: 1px solid #fff;
+
+                    &:not(:first-child) {
+                        padding-left: 20px;
                     }
                 }
 

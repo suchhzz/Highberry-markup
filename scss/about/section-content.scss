@@ -156,7 +156,12 @@
             }
 
             .description {
-                gap: 45px;
+                padding-left: 45px;
+                border-left: 1px solid #6AB354;
+
+                img {
+                    display: none;
+                }
 
                 .text {
                     flex-direction: column;
@@ -472,7 +477,8 @@
                 }
 
                 .description {
-
+                    border-left: none;
+                    padding-left: 0;
                     position: relative;
 
                     &::before {
