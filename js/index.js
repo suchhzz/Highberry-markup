@@ -25,11 +25,14 @@ $(document).ready(function () {
         $('.showreel').toggleClass('active');
     });
 
+    changeBerrySliderImage('berriesFruits');
+
     $('.info-content').click(function () {
         clearSelectedBerrySlider();
         changeBerrySliderImage($(this).data('image'));
 
         $(this).addClass('selected');
+
 
         let imageIndex = $(this).index();
 
@@ -55,7 +58,7 @@ function changeBerrySliderImage(currentImageId) {
     let startIndex = $images.index($('#' + currentImageId));
     const orderedImages = [...$images].slice(startIndex).concat([...$images].slice(0, startIndex));
 
-    $images.css('display', 'none');
+    $images.css('z-index', '0');
 
     const visibleImages = orderedImages.slice(0, 5);
 

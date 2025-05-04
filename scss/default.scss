@@ -578,13 +578,18 @@ i.menu-item-arrow-down {
 
         .modal-title {
             flex-direction: column;
-            gap: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
+            position: relative;
 
-            @media (max-width: 1180px) {
-                img {
-                    transform: scale(0.7);
-                }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 2px;
+                background-color: #6AB354;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 20px);
             }
         }
 
@@ -684,7 +689,27 @@ i.menu-item-arrow-down {
         .grid-title {
             flex-direction: column;
             gap: 15px;
+            padding: 0 10px 15px 10px;
             margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            box-sizing: border-box;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 1px;
+                background-color: #6AB354;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            img {
+                display: none;
+            }
         }
 
         .grid-main {
@@ -1782,8 +1807,8 @@ i.product-list-item-arrow-down {
         margin: 0 auto;
 
         &-title {
-            img {
-                transform: scale(0.5) !important;
+            &::after {
+                height: 1px !important;
             }
         }
     }
@@ -1839,8 +1864,7 @@ i.product-list-item-arrow-down {
         margin: 0 auto;
 
         &-title {
-            margin-bottom: 15px !important;
-            gap: 15px !important;
+            margin-bottom: 30px !important;
 
             img {
                 transform: scale(0.3) !important;
@@ -1928,7 +1952,8 @@ i.product-list-item-arrow-down {
             }
 
             .grid-title {
-                gap: 13px;
+
+                padding: 0 10px 12px 10px;
                 margin-bottom: 10px;
             }
 

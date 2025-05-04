@@ -31,7 +31,7 @@
 
                     &--wrapper {
                         position: relative;
-                        height: 100%;   
+                        height: 100%;
 
                         .image-title-item {
                             position: absolute;
@@ -204,8 +204,6 @@
                     }
 
                     .info-content {
-                        .info-content-icon {}
-
                         .info-content-main {
                             .info-content-title {
                                 p {
@@ -222,39 +220,47 @@
                     }
                 }
 
-                .image-slider {
-                    .image-item {
-                        &.first {
-                            height: 100%;
-                            z-index: 5;
-                            margin-right: 140px;
-                        }
+                // .image-slider {
+                //     .image-item {
 
-                        &.second {
-                            height: 90%;
-                            z-index: 4;
-                            margin-right: 105px;
-                        }
+                //         display: none;
 
-                        &.third {
-                            height: 80%;
-                            z-index: 3;
-                            margin-right: 70px;
-                        }
+                //         &.first {
+                //             display: inline-block;
+                //             height: 100%;
+                //             z-index: 5;
+                //             margin-right: 20%;
+                //         }
 
-                        &.fourth {
-                            height: 70%;
-                            z-index: 2;
-                            margin-right: 35px;
-                        }
+                //         &.second {
+                //             display: inline-block;
+                //             height: 90%;
+                //             z-index: 4;
+                //             margin-right: 15%;
+                //         }
 
-                        &.fifth {
-                            height: 60%;
-                            z-index: 1;
-                            margin-right: 0;
-                        }
-                    }
-                }
+                //         &.third {
+                //             display: inline-block;
+                //             height: 80%;
+                //             z-index: 3;
+                //             margin-right: 10%;
+                //         }
+
+                //         &.fourth {
+                //             display: inline-block;
+                //             height: 70%;
+                //             z-index: 2;
+                //             margin-right: 5%;
+                //         }
+
+                //         &.fifth {
+                //             display: inline-block;
+                //             height: 60%;
+                //             z-index: 1;
+                //             margin-right: 0;
+                //         }
+                //     }
+                // }
             }
         }
     }
@@ -593,7 +599,7 @@
                         width: 100%;
                         object-fit: cover;
                     }
-                    
+
                     .mobile-image-title {
                         display: block;
                     }
