@@ -48,14 +48,29 @@ function clearSelectedBerrySlider() {
 const images = ['berriesFruits', 'wildBerries', 'puree', 'vegetables', 'mixture'];
 const imageClasses = ['first', 'second', 'third', 'fourth', 'fifth'];
 
-function changeBerrySliderImage(currentImage) {
-    $('.image-item').removeClass('first second third fourth fifth');
+function changeBerrySliderImage(currentImageId) {
+    const $images = $('.berry-slider .image-item');
+    const total = $images.length;
 
-    let index = images.indexOf(currentImage);
+    let startIndex = $images.index($('#' + currentImageId));
+    const orderedImages = [...$images].slice(startIndex).concat([...$images].slice(0, startIndex));
 
-    for (let i = 0; i < images.length; i++) {
-        $('#' + images[(index + i) % images.length]).addClass(imageClasses[i]);
-    }
+    $images.css('display', 'none');
+
+    const visibleImages = orderedImages.slice(0, 5);
+
+    visibleImages.forEach((img, i) => {
+        const heightPercent = 100 - i * 10;
+        const zIndex = 5 - i;
+        const marginRightPercent = ((4 - i) / 4) * 20;
+
+        $(img).css({
+            display: 'inline-block',
+            height: heightPercent + '%',
+            'z-index': zIndex,
+            'margin-right': marginRightPercent + '%'
+        });
+    });
 }
 
 function changeBerryListImage(item) {
