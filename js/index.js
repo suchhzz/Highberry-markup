@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    $('.accordion').click(function() {
+$(document).ready(function () {
+    $('.accordion').click(function () {
         clearActiveTabs();
-    
+
         $(this).find('.accordion-content').addClass('active');
         $(this).find('.ellipse').addClass('highlight');
         $(this).find('.line').addClass('highlight');
@@ -11,13 +11,21 @@ $(document).ready(function() {
         changeBerryListImage(berry);
     });
 
-    $('#scrollTriggerButton').click(function() {
+    $('#scrollTriggerButton').click(function () {
         $('html, body').animate({
             scrollTop: $('#colorBackgroundTrigger').offset().top
         }, 1000);
     });
 
-    $('.info-content').click(function() {
+    $('.showreel-button').click(function () {
+        $('.showreel').toggleClass('active');
+    });
+
+    $('.showreel-overlay').click(function () {
+        $('.showreel').toggleClass('active');
+    });
+
+    $('.info-content').click(function () {
         clearSelectedBerrySlider();
         changeBerrySliderImage($(this).data('image'));
 
@@ -65,15 +73,15 @@ function changeBerryListImage(item) {
 }
 
 function changeBerryListImageMobile(item) {
-    
+
 }
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     let scrollPosition = $(window).scrollTop();
-    
+
     let darkBackgroundTrigger = $('#darkBackgroundHeaderTrigger').offset().top;
     let colorBackgroundTrigger = $('#colorBackgroundTrigger').offset().top;
-    
+
     if (scrollPosition > darkBackgroundTrigger && scrollPosition < colorBackgroundTrigger) {
         $('header').addClass('dark-background');
         addHeaderTransparent();
@@ -94,7 +102,7 @@ function addHeaderTransparent() {
     }
 }
 
-$(document).click(function(event) {
+$(document).click(function (event) {
     clearDescription();
 });
 

@@ -515,9 +515,12 @@ i.menu-item-arrow-down {
     margin-bottom: 75px;
 
     .video-preview-main {
-        background-color: #1A171B;
-        height: 493px;
         width: 900px;
+        aspect-ratio: 16 / 9;
+
+        .player {
+            object-fit: contain;
+        }
     }
 }
 

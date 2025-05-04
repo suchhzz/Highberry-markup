@@ -39,23 +39,30 @@
             }
 
             .lower-buttons {
-
                 align-self: end;
                 gap: 47px;
 
-                .youtube-link {
-                    border: 0.5px solid white;
-                    border-radius: 8px;
-                    padding: 10px;
-                    gap: 27px;
-                    padding: 10px 30px;
+                .showreel-button {
+                    background-color: transparent;
+                    cursor: pointer;
+                    border: none;
 
-                    p {
-                        font-family: 'Roboto-Thin';
-                        font-size: 22px;
-                        color: white;
-                        font-weight: 400;
+                    .youtube-link {
+                        border: 0.5px solid white;
+                        border-radius: 8px;
+                        padding: 10px;
+                        gap: 27px;
+                        padding: 10px 30px;
+
+                        p {
+                            font-family: 'Roboto-Thin';
+                            font-size: 22px;
+                            color: white;
+                            font-weight: 400;
+                        }
                     }
+
+
                 }
 
                 .arrow-button {
@@ -68,6 +75,7 @@
                         cursor: pointer;
                     }
                 }
+
             }
         }
     }
