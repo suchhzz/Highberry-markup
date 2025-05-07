@@ -1,81 +1,108 @@
 .main-page {
     section .main-logo {
-        padding-top: 155px;
+        position: relative;
         background-image: url("../../images/section/main-logo/main-logo-background.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100%;
+        height: 100vh;
 
-        .video-background {
-            iframe {
-                position: absolute;
+        .video-container {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            .video-background {
                 pointer-events: none;
-                width: 177.78vh;
-                aspect-ratio: 16 / 9;
-                top: 0;
-                left: 0;
-                // width: 100%;
-                height: 120%;
-                object-fit: cover;
-                /* Для предотвращения обрезки */
-            }
 
+                iframe {
+                    position: absolute;
+                    pointer-events: none;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 177.78vh;
+                    object-fit: cover;
+                    vertical-align: baseline;
+
+                    @media (max-aspect-ratio: 16 / 9) {
+                        width: 177.78vh;
+                        height: 120%;
+                    }
+
+                    @media (min-aspect-ratio: 16 / 9) {
+                        height: 56.25vw;
+                        width: 120%;
+                    }
+                }
+
+            }
         }
 
-        .main-content {
+        .content-container {
 
-            flex-direction: column;
-            align-items: start;
-            padding-bottom: 67px;
-            gap: 100px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
 
-            >p {
-                font-family: 'Roboto-Light';
-                font-size: 60px;
-                max-width: 30%;
-                color: white;
-                font-weight: 300;
-            }
+            .main-content {
 
-            .lower-buttons {
-                align-self: end;
-                gap: 47px;
+                padding-top: 155px;
+                flex-direction: column;
+                align-items: start;
+                padding-bottom: 67px;
+                gap: 100px;
 
-                .showreel-button {
-                    background-color: transparent;
-                    cursor: pointer;
-                    border: none;
+                >p {
+                    font-family: 'Roboto-Light';
+                    font-size: 60px;
+                    max-width: 30%;
+                    color: white;
+                    font-weight: 300;
+                }
 
-                    .youtube-link {
-                        border: 0.5px solid white;
-                        border-radius: 8px;
+                .lower-buttons {
+                    align-self: end;
+                    gap: 47px;
+
+                    .showreel-button {
+                        background-color: transparent;
+                        cursor: pointer;
+                        border: none;
+
+                        .youtube-link {
+                            border: 0.5px solid white;
+                            border-radius: 8px;
+                            padding: 10px;
+                            gap: 27px;
+                            padding: 10px 30px;
+
+                            p {
+                                font-family: 'Roboto-Thin';
+                                font-size: 22px;
+                                color: white;
+                                font-weight: 400;
+                            }
+                        }
+
+
+                    }
+
+                    .arrow-button {
+                        border: 1px solid white;
+                        border-radius: 4px;
                         padding: 10px;
-                        gap: 27px;
-                        padding: 10px 30px;
+                        background-color: transparent;
 
-                        p {
-                            font-family: 'Roboto-Thin';
-                            font-size: 22px;
-                            color: white;
-                            font-weight: 400;
+                        &:hover {
+                            cursor: pointer;
                         }
                     }
 
-
                 }
-
-                .arrow-button {
-                    border: 1px solid white;
-                    border-radius: 4px;
-                    padding: 10px;
-                    background-color: transparent;
-
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-
             }
         }
     }
