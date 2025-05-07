@@ -49,22 +49,35 @@
             z-index: 2;
 
             .main-content {
+                position: relative;
+                height: 100%;
+                width: 100%;
 
-                padding-top: 155px;
-                flex-direction: column;
-                align-items: start;
-                padding-bottom: 67px;
-                gap: 100px;
+                .heading-left {
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 100px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
 
-                >p {
-                    font-family: 'Roboto-Light';
-                    font-size: 60px;
-                    max-width: 30%;
-                    color: white;
-                    font-weight: 300;
+                    >p {
+                        font-family: 'Roboto-Light';
+                        font-size: 60px;
+                        max-width: 50%;
+                        color: white;
+                        font-weight: 300;
+                    }
                 }
 
+
+
+
                 .lower-buttons {
+                    position: absolute;
+                    bottom: 10%;
+                    right: 0;
                     align-self: end;
                     gap: 47px;
 
@@ -109,11 +122,19 @@
 
     @media (max-width: 1515px) {
         section .main-logo {
-            .main-content {
-                margin: 0 50px;
+            .content-container {
+                .main-content {
+                    .heading-left {
+                        left: 5%;
 
-                >p {
-                    max-width: 450px;
+                        >p {
+                            max-width: 450px;
+                        }
+                    }
+
+                    .lower-buttons {
+                        right: 5%;
+                    }
                 }
             }
         }
@@ -121,43 +142,68 @@
 
     @media (max-width: 1024px) {
         section .main-logo {
-            .main-content {
+            .content-container {
+                .main-content {
 
-                >p {
-                    font-size: 46px;
-                }
+                    >p {
+                        font-size: 46px;
+                    }
 
-                .lower-buttons {
-                    a {
-                        display: none;
+                    .lower-buttons {
+                        bottom: 5%;
+
+                        .showreel-button {
+                            display: none;
+                        }
                     }
                 }
             }
         }
     }
 
-    @media (max-width: 515px) {
+    @media (max-width: 630px) {
+        section .main-logo {
+            .content-container {
+                .main-content {
+                    .heading-left {
+                        p {
+                            font-size: 46px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 505px) {
         section .main-logo {
 
-            height: 545px;
+            .content-container {
+                .main-content {
+                    height: 100%;
+                    justify-content: flex-end;
 
-            .main-content {
-                height: 100%;
-                justify-content: flex-end;
+                    .heading-left {
+                        top: auto;
+                        transform: none;
+                        bottom: 10%;
 
-                .heading-logo {
-                    display: none;
-                }
+                        .heading-logo {
+                            display: none;
+                        }
 
-                >p {
-                    font-size: 32px;
-                    max-width: 230px;
-                    margin-bottom: 50px;
-                    line-height: 50px;
-                }
+                        >p {
+                            font-size: 32px;
+                            max-width: 80%;
+                            line-height: 50px;
+                        }
+                    }
 
-                .lower-buttons {
-                    display: none;
+
+
+                    .lower-buttons {
+                        display: none;
+                    }
                 }
             }
         }
