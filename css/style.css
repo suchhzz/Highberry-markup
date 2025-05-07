@@ -364,6 +364,7 @@ i.menu-item-arrow-down:hover {
   flex-direction: column;
   align-items: start;
   margin-left: 90px;
+  padding-right: 40px;
 }
 .berry-list-info .berry-container .berry-list .berry-list-container .accordion {
   gap: 40px;
@@ -388,7 +389,7 @@ i.menu-item-arrow-down:hover {
   max-height: 0;
   height: 100%;
   bottom: 0;
-  transition: max-height 0.3s linear;
+  transition: max-height 0.3s linear, height 0.3s linear;
 }
 .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section {
   flex-direction: column;
@@ -415,6 +416,7 @@ i.menu-item-arrow-down:hover {
   font-size: 16px;
   color: black;
   line-height: 1.6;
+  max-height: 0;
   transition: max-height 0.3s linear;
 }
 .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content a {
@@ -1292,6 +1294,7 @@ i.product-list-item-arrow-down:hover {
   }
   .berry-list-info .berry-container .berry-list .berry-list-container {
     margin-left: 32px;
+    padding-right: 30px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .berry-list-title {
     margin-bottom: 10px;
@@ -1300,7 +1303,7 @@ i.product-list-item-arrow-down:hover {
     font-size: 38px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon {
     margin-top: 5px;
@@ -1310,20 +1313,11 @@ i.product-list-item-arrow-down:hover {
     height: 15px;
     background-size: 100%;
   }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line {
-    height: 125px !important;
-  }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line.highlight {
-    max-height: 125px !important;
-  }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-title {
     font-size: 22px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content {
     font-size: 14px;
-  }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
-    max-height: 125px !important;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content a {
     margin: 5px 0 10px 0;
@@ -1337,23 +1331,18 @@ i.product-list-item-arrow-down:hover {
     width: 14px;
     height: 14px;
   }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line {
-    height: 115px !important;
-  }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line.highlight {
-    max-height: 115px !important;
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section {
+    gap: 7px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content {
     font-size: 12px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content a.link-more-info {
     margin: 5px 0;
-  }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
-    max-height: 105px !important;
+    font-size: 12px;
   }
 }
 @media (max-width: 845px) {
@@ -1369,6 +1358,7 @@ i.product-list-item-arrow-down:hover {
     height: 100%;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container {
+    padding-right: 15px;
     margin-left: 30px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .berry-list-title .head-text {
@@ -1378,9 +1368,6 @@ i.product-list-item-arrow-down:hover {
     width: 13px;
     height: 13px;
   }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line {
-    height: 115px !important;
-  }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon {
     margin-top: 7px;
   }
@@ -1389,9 +1376,6 @@ i.product-list-item-arrow-down:hover {
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content {
     font-size: 12px;
-  }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
-    max-height: 105px !important;
   }
 }
 @media (max-width: 750px) {
@@ -1405,21 +1389,11 @@ i.product-list-item-arrow-down:hover {
     width: 12px;
     height: 12px;
   }
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line {
-    height: 115px !important;
+  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section {
+    gap: 5px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content {
     font-size: 11px;
-  }
-}
-@media (max-width: 620px) {
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content a.link-more-info {
-    margin: 25px 0 10px 0;
-  }
-}
-@media (max-width: 440px) {
-  .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content a.link-more-info {
-    margin: 10px 0;
   }
 }
 @media (max-width: 400px) {
@@ -2947,7 +2921,7 @@ header .header-container .social-group .language-choose p {
   font-size: 16px;
   color: #6AB354;
   padding-right: 20px;
-  border-right: 1px solid #fff;
+  border-right: 1px solid #6AB354;
 }
 header .header-container .social-group .language-choose p:hover {
   cursor: pointer;
@@ -2964,9 +2938,11 @@ header .header-container .social-group .language-choose .active {
 header .header-container .menu i.menu-show {
   width: 23px;
   height: 18px;
-  background-image: url("../images/header/menu.png");
+  color: #fff;
+  background-image: url("../images/header/menu.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   filter: brightness(0) saturate(100%) invert(60%) sepia(50%) saturate(385%) hue-rotate(61deg) brightness(92%) contrast(105%);
 }
 header .header-container .menu i.menu-show:hover {
@@ -2976,7 +2952,7 @@ header.transparent-background {
   background-color: rgba(0, 0, 0, 0);
 }
 header.transparent-background .header-container .logo-group .header-logo .logo-image {
-  background-image: url("../images/header/white-logo.png");
+  background-image: url("../images/header/white-logo.svg");
 }
 header.transparent-background .header-container .logo-group .pdf-info img {
   filter: none;
@@ -2989,6 +2965,7 @@ header.transparent-background .header-container .social-group .social-icons a im
 }
 header.transparent-background .header-container .social-group .language-choose p {
   color: white;
+  border-right: 1px solid #fff;
 }
 header.transparent-background .header-container .social-group .language-choose img {
   filter: none;
@@ -3016,7 +2993,6 @@ header.transparent-background.dark-background {
     display: none;
   }
 }
-
 .about-page .main-logo .main-logo-image {
   background-image: url("../../images/about/main-logo-background.png");
 }
@@ -3443,9 +3419,7 @@ header.transparent-background.dark-background {
     font-size: 10px !important;
   }
 }
-.article-page .main-logo-text {
-  background-image: url("../../images/article/main-logo-background.png");
-}
+
 .contacts-page .main-logo-text {
   background-image: url("../../images/contacts/main-logo-background.png");
   margin: 0;
@@ -3831,6 +3805,9 @@ header.transparent-background.dark-background {
   .contacts-page section .card-container .contacts-section .contact-form .contact-form-container {
     padding: 20px 15px;
   }
+}
+.article-page .main-logo-text {
+  background-image: url("../../images/article/main-logo-background.png");
 }
 .events-page .main-logo .main-logo-image {
   background-image: url("../../images/vacancies/main-logo-background.png");
@@ -4782,12 +4759,7 @@ header.transparent-background.dark-background {
     transform: translate(-50%, -40%);
   }
 }
-.main-page .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line.highlight {
-  max-height: 170px;
-  height: 170px;
-}
 .main-page .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
-  max-height: 170px;
   opacity: 1;
 }
 @media (max-width: 845px) {
@@ -4797,12 +4769,7 @@ header.transparent-background.dark-background {
   .main-page .berry-list-info .berry-container .berry-list .berry-list-container {
     padding-bottom: 20px;
   }
-  .main-page .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-icon .line.highlight {
-    max-height: 135px;
-    height: 135px;
-  }
   .main-page .berry-list-info .berry-container .berry-list .berry-list-container .accordion .accordion-section .accordion-content.active {
-    max-height: 120px;
     opacity: 1;
   }
 }

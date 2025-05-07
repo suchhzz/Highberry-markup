@@ -1,15 +1,17 @@
 $(document).ready(function () {
     $('.accordion').click(function () {
-        clearActiveTabs();
-
-        $(this).find('.accordion-content').addClass('active');
-        $(this).find('.ellipse').addClass('highlight');
-        $(this).find('.line').addClass('highlight');
-
-        let berry = $(this).data('image');
-        console.log(berry);
-        changeBerryListImage(berry);
+        handleAccordionClick($(this));
     });
+
+    $('.berry-list').each(function () {
+        const $accordion = $(this);
+
+        $accordion.find('.accordion').first().each(function () {
+            console.log($(this));
+            handleAccordionClick($(this));
+        });
+    });
+
 
     $('#scrollTriggerButton').click(function () {
         $('html, body').animate({
@@ -41,6 +43,43 @@ $(document).ready(function () {
     });
 
 })
+
+function clearAccordionTabs($container, $content, $line) {
+    $container.find('.accordion-content').not($content).removeClass('active').css('max-height', '0');
+    $container.find('.line').not($line).removeClass('highlight').css({
+        'max-height': '0',
+        'height': '0',
+    });
+    $container.find('.ellipse').removeClass('highlight');
+}
+
+function handleAccordionClick($accordion) {
+    const $berryContainer = $accordion.closest('.berry-list');
+    const $targetAccordion = $accordion.closest('.accordion');
+
+    const $content = $targetAccordion.find('.accordion-content');
+    const $line = $targetAccordion.find('.line');
+
+    clearAccordionTabs($berryContainer, $content, $line);
+
+    $content.addClass('active');
+    $targetAccordion.find('.ellipse').addClass('highlight');
+    $line.addClass('highlight').css({
+        'max-height': '1000px',
+        'height': 'auto',
+    });
+
+    const scrollHeight = $content.prop('scrollHeight');
+    $content.css('max-height', scrollHeight + 'px');
+
+    $line.css({
+        'max-height': scrollHeight + 'px',
+        'height': scrollHeight + 'px'
+    });
+
+    let berry = $targetAccordion.data('image');
+    changeBerryListImage(berry);
+}
 
 function clearSelectedBerrySlider() {
     $('.info-content').removeClass('selected');
@@ -123,11 +162,3 @@ function addHeaderTransparent() {
 $(document).click(function (event) {
     clearDescription();
 });
-
-
-function clearActiveTabs() {
-    $('.accordion-content').removeClass('active');
-    $('.ellipse').removeClass('highlight');
-    $('.line').removeClass('highlight');
-};
-

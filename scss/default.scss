@@ -443,6 +443,7 @@ i.menu-item-arrow-down {
                 flex-direction: column;
                 align-items: start;
                 margin-left: 90px;
+                padding-right: 40px;
 
                 .accordion {
                     gap: 40px;
@@ -473,7 +474,7 @@ i.menu-item-arrow-down {
                             height: 100%;
                             bottom: 0;
                             // left: 50%;
-                            transition: max-height 0.3s linear;
+                            transition: max-height 0.3s linear, height 0.3s linear;
                         }
                     }
 
@@ -507,6 +508,7 @@ i.menu-item-arrow-down {
                             font-size: 16px;
                             color: black;
                             line-height: 1.6;
+                            max-height: 0;
 
                             transition: max-height .3s linear;
 
@@ -1617,6 +1619,7 @@ i.product-list-item-arrow-down {
                 .berry-list-container {
 
                     margin-left: 32px;
+                    padding-right: 30px;
 
                     .berry-list-title {
 
@@ -1629,7 +1632,7 @@ i.product-list-item-arrow-down {
 
                     .accordion {
 
-                        margin-bottom: 8px;
+                        margin-bottom: 5px;
 
                         .accordion-icon {
                             margin-top: 5px;
@@ -1641,10 +1644,10 @@ i.product-list-item-arrow-down {
                             }
 
                             .line {
-                                height: 125px !important;
+                                // height: 125px !important;
 
                                 &.highlight {
-                                    max-height: 125px !important;
+                                    // max-height: 125px !important;
                                 }
                             }
                         }
@@ -1658,9 +1661,9 @@ i.product-list-item-arrow-down {
                             .accordion-content {
                                 font-size: 14px;
 
-                                &.active {
-                                    max-height: 125px !important;
-                                }
+                                // &.active {
+                                //     max-height: 125px !important;
+                                // }
 
                                 a {
                                     margin: 5px 0 10px 0;
@@ -1694,17 +1697,20 @@ i.product-list-item-arrow-down {
                             }
 
                             .line {
-                                height: 115px !important;
+                                // height: 115px !important;
 
                                 &.highlight {
-                                    max-height: 115px !important;
+                                    // max-height: 115px !important;
                                 }
                             }
                         }
 
                         .accordion-section {
+
+                            gap: 7px;
+
                             .accordion-title {
-                                font-size: 20px;
+                                font-size: 18px;
                             }
 
                             .accordion-content {
@@ -1712,10 +1718,11 @@ i.product-list-item-arrow-down {
 
                                 a.link-more-info {
                                     margin: 5px 0;
+                                    font-size: 12px;
                                 }
 
                                 &.active {
-                                    max-height: 105px !important;
+                                    // max-height: 105px !important;
                                 }
                             }
                         }
@@ -1741,6 +1748,7 @@ i.product-list-item-arrow-down {
                 height: 100%;
 
                 .berry-list-container {
+                    padding-right: 15px;
 
                     .berry-list-title {
                         .head-text {
@@ -1758,7 +1766,7 @@ i.product-list-item-arrow-down {
                             }
 
                             .line {
-                                height: 115px !important;
+                                // height: 115px !important;
                             }
                         }
 
@@ -1776,7 +1784,7 @@ i.product-list-item-arrow-down {
                                 font-size: 12px;
 
                                 &.active {
-                                    max-height: 105px !important;
+                                    // max-height: 105px !important;
                                 }
                             }
                         }
@@ -1810,33 +1818,16 @@ i.product-list-item-arrow-down {
                             }
 
                             .line {
-                                height: 115px !important;
+                                // height: 115px !important;
                             }
                         }
 
                         .accordion-section {
+
+                            gap: 5px;
+
                             .accordion-content {
                                 font-size: 11px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 620px) {
-    .berry-list-info {
-        .berry-container {
-            .berry-list {
-                .berry-list-container {
-                    .accordion {
-                        .accordion-section {
-                            .accordion-content {
-                                a.link-more-info {
-                                    margin: 25px 0 10px 0;
-                                }
                             }
                         }
                     }
@@ -1855,7 +1846,7 @@ i.product-list-item-arrow-down {
                         .accordion-section {
                             .accordion-content {
                                 a.link-more-info {
-                                    margin: 10px 0;
+                                    // margin: 10px 0;
                                 }
                             }
                         }
@@ -1881,6 +1872,10 @@ i.product-list-item-arrow-down {
                         .accordion-section {
                             .accordion-content {
                                 font-size: 10px;
+                                
+                                a.link-more-info {
+                                    // margin: ;
+                                }
                             }
                         }
                     }
