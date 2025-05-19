@@ -1821,6 +1821,7 @@ i.product-list-item-arrow-down {
     .berry-list-info {
         .berry-container {
             grid-template-columns: 55% 45%;
+
             .berry-list {
                 .berry-list-container {
 
@@ -1882,6 +1883,7 @@ i.product-list-item-arrow-down {
     .berry-list-info {
         .berry-container {
             grid-template-columns: 50% 50%;
+
             .berry-list {
                 .berry-list-container {
                     .berry-list-title {
@@ -1940,6 +1942,7 @@ i.product-list-item-arrow-down {
     .berry-list-info {
         .berry-container {
             grid-template-columns: 45% 55%;
+
             .berry-list {
                 .berry-list-container {
                     .berry-list-title {
@@ -3117,7 +3120,7 @@ i.product-list-item-arrow-down {
 
             .image-info {
                 grid-template-columns: 10% 80% 10%;
-                margin: 0 30px;
+                margin: 0 20px;
                 row-gap: 15px;
                 padding: 30px 0;
 
@@ -3189,6 +3192,38 @@ i.product-list-item-arrow-down {
                 grid-template-columns: repeat(3, 212px);
             }
 
+            .cultivation-description {
+                margin-top: 0px !important;
+                padding-top: 0px !important;
+            }
+
+            .image-info {
+                .grid-item {
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    .grid-item-description {
+                        padding: 7px 13px;
+                        font-size: 14px;
+
+                        &.active {
+                            max-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cultivation {
+
+        background-color: #fff;
+
+        .container {
             .image-info {
                 grid-template-rows: 11% auto 11%;
                 grid-template-columns: repeat(5, 1fr);
