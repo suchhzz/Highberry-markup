@@ -1332,7 +1332,9 @@ i.product-list-item-arrow-down:hover {
 }
 @media (max-width: 1100px) {
   .berry-list-info {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    margin-bottom: 0;
   }
   .berry-list-info .berry-container {
     grid-template-columns: 60% 40%;
@@ -1383,6 +1385,9 @@ i.product-list-item-arrow-down:hover {
   }
 }
 @media (max-width: 950px) {
+  .berry-list-info .berry-container {
+    grid-template-rows: 600px;
+  }
   .berry-list-info .berry-container .berry-list .berry-list-container .berry-list-title .head-text {
     font-size: 30px;
   }
@@ -1407,6 +1412,7 @@ i.product-list-item-arrow-down:hover {
 @media (max-width: 820px) {
   .berry-list-info .berry-container {
     grid-template-columns: 55% 45%;
+    grid-template-rows: 550px;
   }
   .berry-list-info .berry-container .berry-list .berry-list-container {
     margin-left: 16px;
@@ -2164,7 +2170,7 @@ i.product-list-item-arrow-down:hover {
     grid-template-columns: repeat(3, 212px);
   }
   .cultivation .container .cultivation-description {
-    margin-top: 0px !important;
+    margin-top: 35px !important;
     padding-top: 0px !important;
   }
   .cultivation .container .image-info .grid-item img {
@@ -2882,7 +2888,7 @@ footer .footer-container .copyright .copyright-text a {
 @media (max-width: 830px) {
   footer .footer-container .container {
     padding: 0;
-    margin: 0 10px;
+    margin: 0 30px;
   }
   footer .footer-container .container .main-content .authorization {
     right: 5px;
@@ -2894,11 +2900,14 @@ footer .footer-container .copyright .copyright-text a {
     font-size: 12px;
   }
   footer .footer-container .container .lower-contacts .main-contacts .contact-info .contact-number {
-    margin-right: 100px;
+    margin-right: 50px;
   }
   footer .footer-container .container .lower-contacts .main-contacts .contact-info .contact-number .contact-item a,
   footer .footer-container .container .lower-contacts .main-contacts .contact-info .contact-number .contact-item p {
     font-size: 12px;
+  }
+  footer .footer-container .container .contact-socials {
+    margin-right: 50px;
   }
   footer .footer-container .container .contact-socials .catalogue a,
   footer .footer-container .container .contact-socials .catalogue p {
@@ -2945,10 +2954,9 @@ footer .footer-container .copyright .copyright-text a {
     width: 100%;
     max-width: 100%;
   }
-  footer .footer-container .container .main-content .authorization .authorization-form {
-    margin: 0 50px;
-  }
   footer .footer-container .container .main-content .authorization .authorization-form input {
+    box-sizing: border-box;
+    min-height: 30px;
     width: 100% !important;
   }
   footer .footer-container .container .main-content .authorization .authorization-form input[type=submit] {
@@ -3585,9 +3593,6 @@ header.transparent-background.dark-background {
     font-size: 10px !important;
   }
 }
-.article-page .main-logo-text {
-  background-image: url("../../images/article/main-logo-background.png");
-}
 
 .contacts-page .main-logo-text {
   background-image: url("../../images/contacts/main-logo-background.png");
@@ -3974,6 +3979,9 @@ header.transparent-background.dark-background {
   .contacts-page section .card-container .contacts-section .contact-form .contact-form-container {
     padding: 20px 15px;
   }
+}
+.article-page .main-logo-text {
+  background-image: url("../../images/article/main-logo-background.png");
 }
 .events-page .main-logo .main-logo-image {
   background-image: url("../../images/vacancies/main-logo-background.png");

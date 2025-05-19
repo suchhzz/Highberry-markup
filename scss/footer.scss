@@ -429,7 +429,7 @@ footer {
         .footer-container {
             .container {
                 padding: 0;
-                margin: 0 10px;
+                margin: 0 30px;
 
                 .main-content {
                     .authorization {
@@ -454,7 +454,7 @@ footer {
 
                         .contact-info {
                             .contact-number {
-                                margin-right: 100px;
+                                margin-right: 50px;
 
                                 .contact-item {
 
@@ -469,6 +469,7 @@ footer {
                 }
 
                 .contact-socials {
+                    margin-right: 50px;
                     .catalogue {
 
                         a,
@@ -564,9 +565,9 @@ footer {
                         max-width: 100%;
 
                         .authorization-form {
-                            margin: 0 50px;
-
                             input {
+                                box-sizing: border-box;
+                                min-height: 30px;
                                 width: 100% !important;
 
                                 &[type="submit"] {
