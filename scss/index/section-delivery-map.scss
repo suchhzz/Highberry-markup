@@ -92,9 +92,32 @@
         .product-info,
         .cultivation-info,
         .production-info {
+            grid-template-columns: repeat(3, 1fr) !important;
+            justify-items: center !important;
+            margin: 0 !important;
+            gap: 20px !important;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        .delivery-map {
+
+            .head {
+                margin: 35px 0 30px 0;
+
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+
+        .product-info,
+        .cultivation-info,
+        .production-info {
             grid-template-columns: 1fr !important;
             justify-items: center !important;
-            margin: 0 27px !important;
+            // margin: 0 27px !important;
             gap: 20px !important;
         }
 

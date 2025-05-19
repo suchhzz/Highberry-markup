@@ -3,6 +3,10 @@
     src: url("../fonts/Roboto-Thin.ttf");
 }
 
+* {
+    // outline: 1px solid red;
+}
+
 @font-face {
     font-family: 'Roboto-Light';
     src: url("../fonts/Roboto-Light.ttf");
@@ -83,6 +87,8 @@ p {
     border: 1px solid #E3DED9;
     border-radius: 10px;
     gap: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
 
     .info-item-description {
         flex-direction: column;
@@ -1524,8 +1530,86 @@ i.product-list-item-arrow-down {
 
 @media (max-width: 820px) {
     .info-item {
+        height: 87px;
+        gap: 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .info-item-description {
+            p {
+
+                font-size: 11px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .info-item {
+        height: 87px;
+        gap: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .info-item-description {
+            p {
+
+                font-size: 10px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .info-item {
+        height: 77px;
+        gap: 5px;
+        padding: 0 5px;
+        box-sizing: border-box;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .info-item-description {
+            p {
+
+                font-size: 10px;
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .info-item {
         justify-content: flex-start;
         height: 115px;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
 
         img {
             padding-left: 15px;
@@ -1872,7 +1956,7 @@ i.product-list-item-arrow-down {
                         .accordion-section {
                             .accordion-content {
                                 font-size: 10px;
-                                
+
                                 a.link-more-info {
                                     // margin: ;
                                 }
@@ -2923,7 +3007,7 @@ i.product-list-item-arrow-down {
             }
 
             .cultivation-info {
-                margin: 20px 27px !important;
+                margin: 20px 0 !important;
                 display: grid;
                 grid-template-columns: repeat(3, 212px);
             }
