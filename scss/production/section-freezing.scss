@@ -69,6 +69,10 @@
         }
 
         .freezing-process-main {
+
+            padding-top: 25px;
+            padding-bottom: 30px;
+            overflow-y: hidden;
             position: relative;
 
             .divider {
@@ -77,6 +81,29 @@
                 top: 0;
                 transform: translate(-50%, -0.7%);
                 height: 5235px;
+            }
+
+            .divider-text {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -0.7%);
+                height: 5235px;
+                width: 31px;
+                display: flex;
+                flex-direction: column;
+                gap: 187px;
+                padding-top: 60px;
+
+                p {
+                    transform: rotate(-90deg);
+                    transform-origin: center;
+                    white-space: nowrap;
+                    color: #6AB354;
+                    font-size: 14px;
+                    font-family: 'Roboto-Regular';
+                    font-weight: bold;
+                }
             }
 
             .grid-info-container {
@@ -143,6 +170,10 @@
             &-main {
                 .divider {
                     width: 10px;
+                    height: 3000px !important;
+                }
+
+                .divider-text {
                     height: 3000px !important;
                 }
             }
